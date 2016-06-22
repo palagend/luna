@@ -20,8 +20,6 @@ import com.palagend.luna.dao.PrimaryProductDao;
 import com.palagend.luna.po.PkgItem;
 import com.palagend.luna.po.PrimaryProduct;
 
-import freemarker.template.utility.StringUtil;
-
 @RequestMapping("/product")
 @Controller
 public class ProductController {
