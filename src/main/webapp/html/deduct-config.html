@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
     <head>
+        <!-- AngularJs & jQuery -->
+        <script type="text/javascript" src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+        <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
         <meta charset="utf-8"/>
-        <title>分销商提成配置页面</title>
+        <title>Form Elements - Ace Admin</title>
 
         <meta name="description" content="Common form elements and layouts"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
@@ -33,7 +36,6 @@
 
         <!-- inline styles related to this page -->
 
-        <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
         <!-- ace settings handler -->
         <script src="../assets/js/ace-extra.js"></script>
 
@@ -43,7 +45,6 @@
     </head>
 
     <body class="no-skin">
-
         <div class="main-container" id="main-container">
             <script type="text/javascript">
                 try {
@@ -53,7 +54,6 @@
 
             <div class="main-content">
                 <div class="main-content-inner">
-                    <!-- breadcrumbs-->
                     <div class="breadcrumbs" id="breadcrumbs">
                         <script type="text/javascript">
                             try {
@@ -79,316 +79,355 @@
                                 </span>
                             </form>
                         </div>
+                        <!-- /.nav-search -->
+
+                        <!-- /section:basics/content.searchbox -->
                     </div>
 
+                    <!-- /section:basics/content.breadcrumbs -->
                     <div class="page-content">
-
-                        <div class="row">
-                            <div class="widget-box">
-                                <div class="widget-header">
-                                    <h4 class="widget-title">配置面板</h4>
-
-                                    <span class="widget-toolbar">
-                                        <a href="#" data-action="settings">
-                                            <i class="ace-icon fa fa-cog"></i>
-                                        </a>
-
-                                        <a href="#" data-action="reload">
-                                            <i class="ace-icon fa fa-refresh"></i>
-                                        </a>
-
-                                        <a href="#" data-action="collapse">
-                                            <i class="ace-icon fa fa-chevron-up"></i>
-                                        </a>
-
-                                        <a href="#" data-action="close">
-                                            <i class="ace-icon fa fa-times"></i>
-                                        </a>
-                                    </span>
-                                </div>
-                                <div class="widget-body">
-                                    <div class="widget-main">
-                                        <div class="col-xs-12">
-                                            <!-- PAGE CONTENT BEGINS -->
-                                            <form class="form-horizontal" role="form" action="">
-                                                <!-- #section:elements.form -->
-                                                <div class="form-group">
-                                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-1">
-                                                        提成的配置方案名
-                                                    </label>
-
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="form-field-1" placeholder="输入方案名" class="col-xs-10 col-sm-5" name="name"/>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-2">
-                                                        交易金额
-                                                    </label>
-
-                                                    <div class="col-sm-9">
-                                                        <select class="col-xs-10 col-sm-5" id="form-field-2" name="money">
-                                                            <option value="100">100元</option>
-                                                            <option value="200">200元</option>
-                                                            <option value="300">300元</option>
-                                                            <option value="400">400元</option>
-                                                            <option value="500">500元</option>
-                                                            <option value="1000">1000元</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-3 control-label no-padding-right" for="form-field-3">
-                                                        交易金额对应的提成
-                                                    </label>
-
-                                                    <div class="col-sm-9">
-                                                        <input type="text" id="form-field-3" placeholder="输入大于0的整数,单位为元" class="col-xs-10 col-sm-5" name="name"/>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                            <div class="clearfix form-actions">
-                                                <div class="col-md-offset-3 col-md-9">
-                                                    <button class="btn btn-info" type="button">
-                                                        <i class="ace-icon fa fa-check bigger-110"></i>
-                                                        Submit
-                                                    </button>
-
-                                                    &nbsp; &nbsp; &nbsp;
-                                                    <button class="btn" type="reset">
-                                                        <i class="ace-icon fa fa-undo bigger-110"></i>
-                                                        Reset
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <!-- #section:settings.box -->
+                        <div class="ace-settings-container" id="ace-settings-container">
+                            <div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
+                                <i class="ace-icon fa fa-cog bigger-130"></i>
                             </div>
+
+                            <div class="ace-settings-box clearfix" id="ace-settings-box">
+                                <div class="pull-left width-50">
+                                    <!-- #section:settings.skins -->
+                                    <div class="ace-settings-item">
+                                        <div class="pull-left">
+                                            <select id="skin-colorpicker" class="hide">
+                                                <option data-skin="no-skin" value="#438EB9">#438EB9</option>
+                                                <option data-skin="skin-1" value="#222A2D">#222A2D</option>
+                                                <option data-skin="skin-2" value="#C6487E">#C6487E</option>
+                                                <option data-skin="skin-3" value="#D0D0D0">#D0D0D0</option>
+                                            </select>
+                                        </div>
+                                        <span>&nbsp; Choose Skin</span>
+                                    </div>
+
+                                    <!-- /section:settings.skins -->
+
+                                    <!-- #section:settings.navbar -->
+                                    <div class="ace-settings-item">
+                                        <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-navbar"/>
+                                        <label class="lbl" for="ace-settings-navbar">
+                                            Fixed Navbar</label>
+                                    </div>
+
+                                    <!-- /section:settings.navbar -->
+
+                                    <!-- #section:settings.sidebar -->
+                                    <div class="ace-settings-item">
+                                        <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-sidebar"/>
+                                        <label class="lbl" for="ace-settings-sidebar">
+                                            Fixed Sidebar</label>
+                                    </div>
+
+                                    <!-- /section:settings.sidebar -->
+
+                                    <!-- #section:settings.breadcrumbs -->
+                                    <div class="ace-settings-item">
+                                        <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-breadcrumbs"/>
+                                        <label class="lbl" for="ace-settings-breadcrumbs">
+                                            Fixed Breadcrumbs</label>
+                                    </div>
+
+                                    <!-- /section:settings.breadcrumbs -->
+
+                                    <!-- #section:settings.rtl -->
+                                    <div class="ace-settings-item">
+                                        <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-rtl"/>
+                                        <label class="lbl" for="ace-settings-rtl">
+                                            Right To Left (rtl)</label>
+                                    </div>
+
+                                    <!-- /section:settings.rtl -->
+
+                                    <!-- #section:settings.container -->
+                                    <div class="ace-settings-item">
+                                        <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-add-container"/>
+                                        <label class="lbl" for="ace-settings-add-container">
+                                            Inside
+                                            <b>.container</b>
+                                        </label>
+                                    </div>
+
+                                    <!-- /section:settings.container -->
+                                </div>
+                                <!-- /.pull-left -->
+
+                                <div class="pull-left width-50">
+                                    <!-- #section:basics/sidebar.options -->
+                                    <div class="ace-settings-item">
+                                        <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-hover"/>
+                                        <label class="lbl" for="ace-settings-hover">
+                                            Submenu on Hover</label>
+                                    </div>
+
+                                    <div class="ace-settings-item">
+                                        <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-compact"/>
+                                        <label class="lbl" for="ace-settings-compact">
+                                            Compact Sidebar</label>
+                                    </div>
+
+                                    <div class="ace-settings-item">
+                                        <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-highlight"/>
+                                        <label class="lbl" for="ace-settings-highlight">
+                                            Alt. Active Item</label>
+                                    </div>
+
+                                    <!-- /section:basics/sidebar.options -->
+                                </div>
+                                <!-- /.pull-left -->
+                            </div>
+                            <!-- /.ace-settings-box -->
                         </div>
+                        <!-- /.ace-settings-container -->
+
+                        <!-- /section:settings.box -->
+                        <div class="page-header">
+                            <h1>
+                                Form Elements
+                                <small>
+                                    <i class="ace-icon fa fa-angle-double-right"></i>
+                                    Common form elements and layouts
+                                </small>
+                            </h1>
+                        </div>
+                        <!-- /.page-header -->
 
                         <div class="row">
-                            <div class="col-sm-4">
-                                <div class="widget-box">
-                                    <div class="widget-header">
-                                        <h4 class="widget-title">Date Picker</h4>
+                            <div class="col-xs-12">
+                                <!-- PAGE CONTENT BEGINS -->
+                                <form class="form-horizontal" role="form">
+                                    <div class="space-4"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label no-padding-right" for="form-field-1">
+                                            提成的配置方案名
+                                        </label>
 
-                                        <span class="widget-toolbar">
-                                            <a href="#" data-action="settings">
-                                                <i class="ace-icon fa fa-cog"></i>
-                                            </a>
-
-                                            <a href="#" data-action="reload">
-                                                <i class="ace-icon fa fa-refresh"></i>
-                                            </a>
-
-                                            <a href="#" data-action="collapse">
-                                                <i class="ace-icon fa fa-chevron-up"></i>
-                                            </a>
-
-                                            <a href="#" data-action="close">
-                                                <i class="ace-icon fa fa-times"></i>
-                                            </a>
-                                        </span>
+                                        <div class="col-sm-9">
+                                            <input type="text" id="form-field-1" placeholder="输入方案名" class="col-xs-10 col-sm-5" name="name"/>
+                                        </div>
                                     </div>
+                                    <div class="space-4"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label no-padding-right" for="form-field-2">
+                                            交易金额
+                                        </label>
 
-                                    <div class="widget-body">
-                                        <div class="widget-main">
-                                            <label for="id-date-picker-1">Date Picker</label>
+                                        <div class="col-sm-9">
+                                            <select class="col-xs-10 col-sm-5" id="form-field-2" name="money">
+                                                <option value="100">100元</option>
+                                                <option value="200">200元</option>
+                                                <option value="300">300元</option>
+                                                <option value="400">400元</option>
+                                                <option value="500">500元</option>
+                                                <option value="1000">1000元</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="space-4"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label no-padding-right" for="form-field-3">
+                                            交易金额对应的提成
+                                        </label>
 
-                                            <div class="row">
-                                                <div class="col-xs-8 col-sm-11">
-                                                    <!-- #section:plugins/date-time.datepicker -->
-                                                    <div class="input-group">
-                                                        <input class="form-control date-picker" id="id-date-picker-1" type="text" data-date-format="dd-mm-yyyy"/>
-                                                        <span class="input-group-addon">
-                                                            <i class="fa fa-calendar bigger-110"></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="space space-8"></div>
-                                            <label>Range Picker</label>
-
-                                            <div class="row">
-                                                <div class="col-xs-8 col-sm-11">
-                                                    <div class="input-daterange input-group">
-                                                        <input type="text" class="input-sm form-control" name="start"/>
-                                                        <span class="input-group-addon">
-                                                            <i class="fa fa-exchange"></i>
-                                                        </span>
-
-                                                        <input type="text" class="input-sm form-control" name="end"/>
-                                                    </div>
-
-                                                    <!-- /section:plugins/date-time.datepicker -->
-                                                </div>
-                                            </div>
-
-                                            <hr/>
-                                            <label for="id-date-range-picker-1">Date Range Picker</label>
-
-                                            <div class="row">
-                                                <div class="col-xs-8 col-sm-11">
-                                                    <!-- #section:plugins/date-time.daterangepicker -->
-                                                    <div class="input-group">
-                                                        <span class="input-group-addon">
-                                                            <i class="fa fa-calendar bigger-110"></i>
-                                                        </span>
-
-                                                        <input class="form-control" type="text" name="date-range-picker" id="id-date-range-picker-1"/>
-                                                    </div>
-
-                                                    <!-- /section:plugins/date-time.daterangepicker -->
-                                                </div>
-                                            </div>
-
-                                            <hr/>
-                                            <label for="timepicker1">Time Picker</label>
-
-                                            <!-- #section:plugins/date-time.timepicker -->
-                                            <div class="input-group bootstrap-timepicker">
-                                                <input id="timepicker1" type="text" class="form-control"/>
-                                                <span class="input-group-addon">
-                                                    <i class="fa fa-clock-o bigger-110"></i>
-                                                </span>
-                                            </div>
-
-                                            <!-- /section:plugins/date-time.timepicker -->
-                                            <hr/>
-                                            <label for="date-timepicker1">Date/Time Picker</label>
-
-                                            <!-- #section:plugins/date-time.datetimepicker -->
+                                        <div class="col-sm-9">
+                                            <input type="text" id="form-field-3" placeholder="输入大于0的整数,单位为元" class="col-xs-10 col-sm-5" name="name"/>
+                                        </div>
+                                    </div>
+                                    <div class="space-4"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label no-padding-right" for="form-field-3">
+                                            交易金额对应的提成
+                                        </label>
+                                        <div class="col-sm-9">
                                             <div class="input-group">
-                                                <input id="date-timepicker1" type="text" class="form-control"/>
                                                 <span class="input-group-addon">
-                                                    <i class="fa fa-clock-o bigger-110"></i>
+                                                    <i class="fa fa-calendar bigger-110"></i>
                                                 </span>
-                                            </div>
 
-                                            <!-- /section:plugins/date-time.datetimepicker -->
+                                                <input class="col-xs-9 col-sm-4" type="text" name="date-range-picker" id="id-date-range-picker-1"/>
+                                            </div>
                                         </div>
                                     </div>
+
+                                    <div class="space-4"></div>
+                                    <div class="clearfix form-actions">
+                                        <div class="col-md-offset-3 col-md-9">
+                                            <button class="btn btn-info" type="button">
+                                                <i class="ace-icon fa fa-check bigger-110"></i>
+                                                Submit
+                                            </button>
+
+                                            &nbsp; &nbsp; &nbsp;
+                                            <button class="btn" type="reset">
+                                                <i class="ace-icon fa fa-undo bigger-110"></i>
+                                                Reset
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="space-24"></div>
+                                    <!--
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="widget-box">
+                                                <div class="widget-header">
+                                                    <h4 class="widget-title">Date Picker</h4>
+
+                                                    <span class="widget-toolbar">
+                                                        <a href="#" data-action="settings">
+                                                            <i class="ace-icon fa fa-cog"></i>
+                                                        </a>
+
+                                                        <a href="#" data-action="reload">
+                                                            <i class="ace-icon fa fa-refresh"></i>
+                                                        </a>
+
+                                                        <a href="#" data-action="collapse">
+                                                            <i class="ace-icon fa fa-chevron-up"></i>
+                                                        </a>
+
+                                                        <a href="#" data-action="close">
+                                                            <i class="ace-icon fa fa-times"></i>
+                                                        </a>
+                                                    </span>
+                                                </div>
+
+                                                <div class="widget-body">
+                                                    <div class="widget-main">
+                                                        <label for="id-date-picker-1">Date Picker</label>
+
+                                                        <div class="row">
+                                                            <div class="col-xs-8 col-sm-11">
+                                                                <div class="input-group">
+                                                                    <input class="form-control date-picker" id="id-date-picker-1" type="text" data-date-format="dd-mm-yyyy"/>
+                                                                    <span class="input-group-addon">
+                                                                        <i class="fa fa-calendar bigger-110"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="space space-8"></div>
+                                                        <label>Range Picker</label>
+
+                                                        <div class="row">
+                                                            <div class="col-xs-8 col-sm-11">
+                                                                <div class="input-daterange input-group">
+                                                                    <input type="text" class="input-sm form-control" name="start"/>
+                                                                    <span class="input-group-addon">
+                                                                        <i class="fa fa-exchange"></i>
+                                                                    </span>
+
+                                                                    <input type="text" class="input-sm form-control" name="end"/>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <hr/>
+                                                        <label for="id-date-range-picker-1">Date Range Picker</label>
+
+                                                        <div class="row">
+                                                            <div class="col-xs-8 col-sm-11">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-calendar bigger-110"></i>
+                                        </span>
+
+                                        <input class="form-control" type="text" name="date-range-picker" id="id-date-range-picker-1"/>
+                                    </div>
+
                                 </div>
                             </div>
 
-                            <div class="col-sm-4">
-                                <div class="widget-box">
-                                    <div class="widget-header">
-                                        <h4 class="widget-title">
-                                            <i class="ace-icon fa fa-tint"></i>
-                                            Color Picker
-                                        </h4>
-                                    </div>
+                            <hr/>
+                            <label for="timepicker1">Time Picker</label>
 
-                                    <div class="widget-body">
-                                        <div class="widget-main">
-                                            <div class="clearfix">
-                                                <label for="colorpicker1">Color Picker</label>
-                                            </div>
-
-                                            <div class="control-group">
-                                                <div class="bootstrap-colorpicker">
-                                                    <!-- #section:plugins/misc.colorpicker -->
-                                                    <input id="colorpicker1" type="text" class="input-small"/>
-
-                                                    <!-- /section:plugins/misc.colorpicker -->
-                                                </div>
-                                            </div>
-
-                                            <hr/>
-
-                                            <!-- #section:custom/colorpicker -->
-                                            <div>
-                                                <label for="simple-colorpicker-1">Custom Color Picker</label>
-
-                                                <select id="simple-colorpicker-1" class="hide">
-                                                    <option value="#ac725e">#ac725e</option>
-                                                    <option value="#d06b64">#d06b64</option>
-                                                    <option value="#f83a22">#f83a22</option>
-                                                    <option value="#fa573c">#fa573c</option>
-                                                    <option value="#ff7537">#ff7537</option>
-                                                    <option value="#ffad46" selected="">#ffad46</option>
-                                                    <option value="#42d692">#42d692</option>
-                                                    <option value="#16a765">#16a765</option>
-                                                    <option value="#7bd148">#7bd148</option>
-                                                    <option value="#b3dc6c">#b3dc6c</option>
-                                                    <option value="#fbe983">#fbe983</option>
-                                                    <option value="#fad165">#fad165</option>
-                                                    <option value="#92e1c0">#92e1c0</option>
-                                                    <option value="#9fe1e7">#9fe1e7</option>
-                                                    <option value="#9fc6e7">#9fc6e7</option>
-                                                    <option value="#4986e7">#4986e7</option>
-                                                    <option value="#9a9cff">#9a9cff</option>
-                                                    <option value="#b99aff">#b99aff</option>
-                                                    <option value="#c2c2c2">#c2c2c2</option>
-                                                    <option value="#cabdbf">#cabdbf</option>
-                                                    <option value="#cca6ac">#cca6ac</option>
-                                                    <option value="#f691b2">#f691b2</option>
-                                                    <option value="#cd74e6">#cd74e6</option>
-                                                    <option value="#a47ae2">#a47ae2</option>
-                                                    <option value="#555">#555</option>
-                                                </select>
-                                            </div>
-
-                                            <!-- /section:custom/colorpicker -->
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="input-group bootstrap-timepicker">
+                                <input id="timepicker1" type="text" class="form-control"/>
+                                <span class="input-group-addon">
+                                    <i class="fa fa-clock-o bigger-110"></i>
+                                </span>
                             </div>
 
-                            <div class="col-sm-4">
-                                <div class="widget-box">
-                                    <div class="widget-header">
-                                        <h4 class="widget-title">
-                                            <i class="ace-icon fa fa-tachometer"></i>
-                                            Knob Input
-                                        </h4>
-                                    </div>
+                            <hr/>
+                            <label for="date-timepicker1">Date/Time Picker</label>
 
-                                    <div class="widget-body">
-                                        <div class="widget-main">
-                                            <div class="control-group">
-                                                <div class="row">
-                                                    <div class="col-xs-6 center">
-                                                        <!-- #section:plugins/charts.knob -->
-                                                        <div class="knob-container inline">
-                                                            <input type="text" class="input-small knob" value="15" data-min="0" data-max="100" data-step="10" data-width="80" data-height="80" data-thickness=".2"/>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-xs-6  center">
-                                                        <div class="knob-container inline">
-                                                            <input type="text" class="input-small knob" value="41" data-min="0" data-max="100" data-width="80" data-height="80" data-thickness=".2" data-fgcolor="#87B87F" data-displayprevious="true" data-anglearc="250" data-angleoffset="-125"/>
-                                                        </div>
-
-                                                        <!-- /section:plugins/charts.knob -->
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-xs-12 center">
-                                                        <div class="knob-container inline">
-                                                            <input type="text" class="input-small knob" value="1" data-min="0" data-max="10" data-width="150" data-height="150" data-thickness=".2" data-fgcolor="#B8877F" data-angleoffset="90" data-cursor="true"/>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="input-group">
+                                <input id="date-timepicker1" type="text" class="form-control"/>
+                                <span class="input-group-addon">
+                                    <i class="fa fa-clock-o bigger-110"></i>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        -->
+                                </form>
+
+                                <div class="hr hr-18 dotted hr-double"></div>
+
+                                <div class="hr hr-18 dotted hr-double"></div>
+                                <!-- PAGE CONTENT ENDS -->
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.page-content -->
+                </div>
+            </div>
+            <!-- /.main-content -->
+
+            <div class="footer">
+                <div class="footer-inner">
+                    <!-- #section:basics/footer -->
+                    <div class="footer-content">
+                        <span class="bigger-120">
+                            <span class="blue bolder">Ace</span>
+                            Application &copy; 2013-2014
+                        </span>
+
+                        &nbsp; &nbsp;
+                        <span class="action-buttons">
+                            <a href="#">
+                                <i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="ace-icon fa fa-rss-square orange bigger-150"></i>
+                            </a>
+                        </span>
+                    </div>
+
+                    <!-- /section:basics/footer -->
+                </div>
+            </div>
+
+            <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+                <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+            </a>
+        </div>
+        <!-- /.main-container -->
 
         <!-- basic scripts -->
         <script src="../assets/js/bootstrap.js"></script>
 
         <!-- page specific plugin scripts -->
+
+        <!--[if lte IE 8]> <script src="../assets/js/excanvas.js"></script> <![endif]-->
         <script src="../assets/js/jquery-ui.custom.js"></script>
         <script src="../assets/js/jquery.ui.touch-punch.js"></script>
         <script src="../assets/js/chosen.jquery.js"></script>
