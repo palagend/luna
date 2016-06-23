@@ -8,6 +8,7 @@
 	<head>
 		<!-- AngularJs -->
 		<script type="text/javascript" src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+		<script src="http://code.angularjs.org/1.4.6/angular-route.min.js"></script>
 		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
@@ -42,7 +43,7 @@
 		<!--[if lte IE 8]> <script src="../assets/js/html5shiv.js"></script> <script src="../assets/js/respond.js"></script> <![endif]-->
 	</head>
 
-	<body class="no-skin" ng-app>
+	<body class="no-skin" ng-app="app.palagend">
 		<!-- #section:basics/navbar.layout -->
 		<div id="navbar" class="navbar navbar-default">
 			<script type="text/javascript">
@@ -311,11 +312,18 @@
 						<ul class="submenu">
 							<!-- Start Your Work Here ^_^ -->
 							<li class="">
-								<a href="${pageContext.request.contextPath}/product/to-pub-product">
+								<a href="#/to-pub-product">
 									<i class="menu-icon fa fa-caret-right"></i>
 									发布基础产品
 								</a>
 
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#/deduct-config">
+									<i class="menu-icon fa fa-caret-right"></i>
+									配置分销商提成
+								</a>
 								<b class="arrow"></b>
 							</li>
 							<li class="">
@@ -354,13 +362,13 @@
 			</div>
 
 			<!-- /section:basics/sidebar -->
-			<div class="main-content">
+			<div class="main-content" ng-controller="MainCtrl">
 				<div class="page-content">
 					<div class="row">
 						<div class="col-xs-12">
 							<!-- PAGE CONTENT BEGINS -->
-
-							<!-- PAGE CONTENT ENDS -->
+							<div class="widget-box" ng-view="stage"></div>
+							<!-- page content ends -->
 						</div>
 						<!-- /.col -->
 					</div>
@@ -397,6 +405,9 @@
 		<script src="../assets/js/ace/ace.settings-skin.js"></script>
 		<script src="../assets/js/ace/ace.widget-on-reload.js"></script>
 		<script src="../assets/js/ace/ace.searchbox-autocomplete.js"></script>
-
+		<!-- Customized JS -->
+		<script src="${pageContext.request.contextPath}/luna.js"></script>
+		<script src="${pageContext.request.contextPath}/components/controllers/deduct.js"></script>
+		<script src="${pageContext.request.contextPath}/components/controllers/product.js"></script>
 	</body>
 </html>
