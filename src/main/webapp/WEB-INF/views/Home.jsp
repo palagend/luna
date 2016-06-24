@@ -6,10 +6,12 @@
 <html lang="zh-cn">
 
 	<head>
-		<!-- AngularJs -->
-		<script type="text/javascript" src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+		<!-- jQuery -->
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!-- AngularJs Bundle -->
+		<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
 		<script src="http://code.angularjs.org/1.4.6/angular-route.min.js"></script>
-		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/angular-ui-bootstrap/0.11.2/ui-bootstrap-tpls.js"></script>
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 		<meta charset="utf-8"/>
@@ -368,7 +370,7 @@
 						<div class="col-xs-12">
 							<!-- PAGE CONTENT BEGINS -->
 							<div class="widget-box" ng-view="stage"></div>
-							<!-- page content ends -->
+							<!-- PAGE CONTENT ENDS -->
 						</div>
 						<!-- /.col -->
 					</div>
@@ -382,7 +384,22 @@
 
 		<!-- basic scripts -->
 		<script src="../assets/js/bootstrap.js"></script>
-
+		<!-- page specific plugin scripts -->
+		<script src="../assets/js/jquery-ui.custom.js"></script>
+		<script src="../assets/js/jquery.ui.touch-punch.js"></script>
+		<script src="../assets/js/chosen.jquery.js"></script>
+		<script src="../assets/js/fuelux/fuelux.spinner.js"></script>
+		<script src="../assets/js/date-time/bootstrap-datepicker.js"></script>
+		<script src="../assets/js/date-time/bootstrap-timepicker.js"></script>
+		<script src="../assets/js/date-time/moment.js"></script>
+		<script src="../assets/js/date-time/daterangepicker.js"></script>
+		<script src="../assets/js/date-time/bootstrap-datetimepicker.js"></script>
+		<script src="../assets/js/bootstrap-colorpicker.js"></script>
+		<script src="../assets/js/jquery.knob.js"></script>
+		<script src="../assets/js/jquery.autosize.js"></script>
+		<script src="../assets/js/jquery.inputlimiter.1.3.1.js"></script>
+		<script src="../assets/js/jquery.maskedinput.js"></script>
+		<script src="../assets/js/bootstrap-tag.js"></script>
 		<!-- ace scripts -->
 		<script src="../assets/js/ace/elements.scroller.js"></script>
 		<script src="../assets/js/ace/elements.colorpicker.js"></script>
