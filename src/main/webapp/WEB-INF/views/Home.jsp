@@ -8,10 +8,9 @@
 	<head>
 		<!-- jQuery -->
 		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-		<!-- AngularJs Bundle -->
-		<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
-		<script src="http://code.angularjs.org/1.4.6/angular-route.min.js"></script>
-		<script src="http://cdn.bootcss.com/angular-ui-bootstrap/0.11.2/ui-bootstrap-tpls.js"></script>
+		<!-- AngularJs  -->
+		<script src="${pageContext.request.contextPath}/bower_components/angular/angular.js"></script>
+
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 		<meta charset="utf-8"/>
@@ -314,7 +313,7 @@
 						<ul class="submenu">
 							<!-- Start Your Work Here ^_^ -->
 							<li class="">
-								<a href="#/to-pub-product">
+								<a ui-sref="state1">
 									<i class="menu-icon fa fa-caret-right"></i>
 									发布基础产品
 								</a>
@@ -322,7 +321,7 @@
 								<b class="arrow"></b>
 							</li>
 							<li class="">
-								<a href="#/deduct-config">
+								<a ui-sref="state2">
 									<i class="menu-icon fa fa-caret-right"></i>
 									配置分销商提成
 								</a>
@@ -369,7 +368,8 @@
 					<div class="row">
 						<div class="col-xs-12">
 							<!-- PAGE CONTENT BEGINS -->
-							<div class="widget-box" ng-view="stage"></div>
+							<div date-picker timezone="Asia/Hong_Kong"></div>
+							<div class="widget-box" ui-view></div>
 							<!-- PAGE CONTENT ENDS -->
 						</div>
 						<!-- /.col -->
@@ -385,6 +385,7 @@
 		<!-- basic scripts -->
 		<script src="../assets/js/bootstrap.js"></script>
 		<!-- page specific plugin scripts -->
+		<!--
 		<script src="../assets/js/jquery-ui.custom.js"></script>
 		<script src="../assets/js/jquery.ui.touch-punch.js"></script>
 		<script src="../assets/js/chosen.jquery.js"></script>
@@ -400,6 +401,7 @@
 		<script src="../assets/js/jquery.inputlimiter.1.3.1.js"></script>
 		<script src="../assets/js/jquery.maskedinput.js"></script>
 		<script src="../assets/js/bootstrap-tag.js"></script>
+	-->
 		<!-- ace scripts -->
 		<script src="../assets/js/ace/elements.scroller.js"></script>
 		<script src="../assets/js/ace/elements.colorpicker.js"></script>
@@ -422,9 +424,12 @@
 		<script src="../assets/js/ace/ace.settings-skin.js"></script>
 		<script src="../assets/js/ace/ace.widget-on-reload.js"></script>
 		<script src="../assets/js/ace/ace.searchbox-autocomplete.js"></script>
+
+		<!-- angular-ui-->
+		<script src="http://cdn.bootcss.com/angular-ui-bootstrap/1.0.0/ui-bootstrap-tpls.js"></script>
+		<script src="${pageContext.request.contextPath}/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 		<!-- Customized JS -->
 		<script src="${pageContext.request.contextPath}/luna.js"></script>
-		<script src="${pageContext.request.contextPath}/components/controllers/deduct.js"></script>
-		<script src="${pageContext.request.contextPath}/components/controllers/product.js"></script>
+		<script src="${pageContext.request.contextPath}/components/controllers.js"></script>
 	</body>
 </html>

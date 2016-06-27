@@ -3,21 +3,14 @@
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
         <meta charset="utf-8"/>
-        <title>Form Elements - Ace Admin</title>
-
-        <meta name="description" content="Common form elements and layouts"/>
+        <title>佣金方案配置</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
 
         <!-- bootstrap & fontawesome -->
         <link rel="stylesheet" href="../assets/css/bootstrap.css"/>
         <link rel="stylesheet" href="../assets/css/font-awesome.css"/>
-
-        <!-- page specific plugin styles -->
-        <link rel="stylesheet" href="../assets/css/daterangepicker.css"/>
-
         <!-- text fonts -->
         <link rel="stylesheet" href="../assets/css/ace-fonts.css"/>
-
 
     </head>
 
@@ -219,7 +212,7 @@
                                     <div class="space-4"></div>
                                     <div class="form-group">
                                         <label class="col-sm-3 control-label no-padding-right" for="form-field-3">
-                                            交易金额对应的提成
+                                            有效期
                                         </label>
                                         <div class="col-sm-9">
                                             <div class="input-group">
@@ -231,7 +224,6 @@
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="space-4"></div>
                                     <div class="clearfix form-actions">
                                         <div class="col-md-offset-3 col-md-9">
@@ -312,10 +304,54 @@
         <script type="text/javascript">
             jQuery(function($) {
 
+                //to translate the daterange picker, please copy the "examples/daterange-fr.js" contents here before initialization ////////////////////////////
 
-                //to translate the daterange picker, please copy the "examples/daterange-fr.js" contents here before initialization
-                // ////////////////////////////
-
+                moment.lang('cn', {
+                    months: "1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月".split("_"),
+                    monthsShort: "1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月".split("_"),
+                    weekdays: "周一_周二_周三_周四_周五_周六_周日".split("_"),
+                    weekdaysShort: "周日_周一_周二_周三_周四_周五_周六".split("_"),
+                    weekdaysMin: "周日_周一_周二_周三_周四_周五_周六".split("_"),
+                    longDateFormat: {
+                        LT: "HH:mm",
+                        L: "YYYY-MM-DD",
+                        LL: "YYYY MMMM D",
+                        LLL: "YYYY MMMM D LT",
+                        LLLL: "dddd LLL"
+                    },
+                    calendar: {
+                        sameDay: "[Aujourd'hui à] LT",
+                        nextDay: '[Demain à] LT',
+                        nextWeek: 'dddd [à] LT',
+                        lastDay: '[Hier à] LT',
+                        lastWeek: 'dddd [dernier à] LT',
+                        sameElse: 'L'
+                    },
+                    relativeTime: {
+                        future: "dans %s",
+                        past: "il y a %s",
+                        s: "quelques secondes",
+                        m: "une minute",
+                        mm: "%d minutes",
+                        h: "une heure",
+                        hh: "%d heures",
+                        d: "un jour",
+                        dd: "%d jours",
+                        M: "un mois",
+                        MM: "%d mois",
+                        y: "une année",
+                        yy: "%d années"
+                    },
+                    ordinal: function(number) {
+                        return number + (number === 1
+                            ? 'er'
+                            : 'ème');
+                    },
+                    week: {
+                        dow: 1, // Monday is the first day of the week.
+                        doy: 4 // The week that contains Jan 4th is the first week of the year.
+                    }
+                });
                 // ////////////////////////////
                 $('input[name=date-range-picker]').daterangepicker({
                     'applyClass': 'btn-sm btn-success',
@@ -323,9 +359,9 @@
                     locale: {
                         applyLabel: '确定',
                         cancelLabel: '取消',
-                        fromLabel:'从',
-                        toLabel:'至',
-                        weekLabel:'周'
+                        fromLabel: '从',
+                        toLabel: '至',
+                        weekLabel: '周'
                     }
                 }).prev().on(ace.click_event, function() {
                     $(this).next().focus();
