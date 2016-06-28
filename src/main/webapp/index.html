@@ -5,29 +5,56 @@
         <title>主页</title>
         <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.css">
 
-        <script src="http://cdn.bootcss.com/angular.js/1.5.5/angular.js"></script>
+        <script src="http://cdn.bootcss.com/angular.js/1.4.6/angular.js"></script>
+        <script src="http://cdn.bootcss.com/angular.js/1.4.6/angular-animate.js"></script>
+        <script src="http://cdn.bootcss.com/angular.js/1.4.6/angular-sanitize.js"></script>
         <script src="http://cdn.bootcss.com/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+
         <script src="http://cdn.bootcss.com/angular-ui-bootstrap/1.0.0/ui-bootstrap-tpls.js"></script>
         <script src="demo.js"></script>
 
-        <!-- <script src="http://cdn.bootcss.com/angular-strap/2.3.9/angular-strap.tpl.js"></script>
-        <script src="http://cdn.bootcss.com/angular.js/1.3.0-beta.13/angular-animate.min.js"></script> -->
+        <script src="http://cdn.bootcss.com/angular-strap/2.3.9/angular-strap.compat.js"></script>
+        <script src="http://cdn.bootcss.com/angular-strap/2.3.9/angular-strap.tpl.js"></script>
 
     </head>
-    <body ng-app="palagend.demo">
-        <div ng-controller="DatepickerDemoCtrl">
-            <pre>Selected date is: <em>{{dt | date:'yyyy-MM-dd hh:mm:ss' }}</em></pre>
-
-            <h4>Inline</h4>
-            <div style="display:inline-block; min-height:290px;">
-                <div uib-datepicker ng-model="dt" class="well well-sm" datepicker-options="options"></div>
+    <body ng-app="palagend.demo" ng-controller="DatepickerDemoCtrl">
+        <!-- mgcrea.ngStrap.datepicker  -->
+        <form name="datepickerForm" class="form-inline" role="form">
+            <!-- Basic example -->
+            <div class="form-group" ng-class="{'has-error': datepickerForm.date.$invalid}">
+                <label class="control-label">
+                    <i class="fa fa-calendar"></i>
+                    Date
+                    <small>(as date)</small>
+                </label>
+                <input class="form-control" ng-model="selectedDate" name="date" bs-datepicker type="text">
             </div>
-
-            <hr/>
-            <button type="button" class="btn btn-sm btn-info" ng-click="today()">Today</button>
-            <button type="button" class="btn btn-sm btn-default" ng-click="setDate(2009, 7, 24)">2009-08-24</button>
-            <button type="button" class="btn btn-sm btn-danger" ng-click="clear()">Clear</button>
-            <button type="button" class="btn btn-sm btn-default" ng-click="toggleMin()" uib-tooltip="After today restriction">Min date</button>
-        </div>
+            <!-- Custom example -->
+            <div class="form-group" ng-class="{'has-error': datepickerForm.date2.$invalid}">
+                <label class="control-label">
+                    <i class="fa fa-calendar"></i>
+                    Date
+                    <small>(as number)</small>
+                </label>
+                <input class="form-control" ng-model="selectedDateAsNumber" data-date-format="yyyy-MM-dd" data-date-type="number" data-min-date="02/10/86" data-max-date="today" data-autoclose="1" name="date2" bs-datepicker type="text">
+            </div>
+            <hr>
+            <!-- Date range example -->
+            <div class="form-group">
+                <label class="control-label">
+                    <i class="fa fa-calendar"></i>
+                    <i class="fa fa-arrows-h"></i>
+                    <i class="fa fa-calendar"></i>
+                    Date range
+                    <small>(dynamic)</small>
+                </label><br>
+                <div class="form-group col-xs-6">
+                    <input class="form-control" ng-model="fromDate" data-max-date="{{untilDate}}" placeholder="From" bs-datepicker type="text">
+                </div>
+                <div class="form-group col-xs-6">
+                    <input class="form-control" ng-model="untilDate" data-min-date="{{fromDate}}" placeholder="Until" bs-datepicker type="text">
+                </div>
+            </div>
+        </form>
     </body>
 </html>

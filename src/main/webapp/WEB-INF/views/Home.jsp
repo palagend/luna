@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html>
@@ -44,8 +43,7 @@
 		<!--[if lte IE 8]> <script src="../assets/js/html5shiv.js"></script> <script src="../assets/js/respond.js"></script> <![endif]-->
 	</head>
 
-	<body class="no-skin" ng-app="app.palagend">
-		<!-- #section:basics/navbar.layout -->
+	<body class="no-skin">
 		<div id="navbar" class="navbar navbar-default">
 			<script type="text/javascript">
 				try {
@@ -242,9 +240,7 @@
 			<!-- /.navbar-container -->
 		</div>
 
-		<!-- /section:basics/navbar.layout -->
-		<div class="main-container" id="main-container">
-			<!-- #section:basics/sidebar -->
+		<div class="main-container" id="main-container" ng-app="palagend.app">
 			<div id="sidebar" class="sidebar responsive">
 				<script type="text/javascript">
 					try {
@@ -362,13 +358,11 @@
 				</script>
 			</div>
 
-			<!-- /section:basics/sidebar -->
-			<div class="main-content" ng-controller="MainCtrl">
+			<div class="main-content">
 				<div class="page-content">
 					<div class="row">
 						<div class="col-xs-12">
 							<!-- PAGE CONTENT BEGINS -->
-							<div date-picker timezone="Asia/Hong_Kong"></div>
 							<div class="widget-box" ui-view></div>
 							<!-- PAGE CONTENT ENDS -->
 						</div>
@@ -376,11 +370,8 @@
 					</div>
 					<!-- /.row -->
 				</div>
-				<!-- /.page-content -->
 			</div>
-			<!-- /.main-content -->
 		</div>
-		<!-- /.main-container -->
 
 		<!-- basic scripts -->
 		<script src="../assets/js/bootstrap.js"></script>

@@ -41,10 +41,6 @@
 					</dependency>
 				</dependencies>
 			</plugin>
-
-			<!-- <plugin> <artifactId>maven-jar-plugin</artifactId> <executions> <execution> 
-				<goals> <goal>jar</goal> </goals> <phase>package</phase> </execution> </executions> 
-				</plugin> -->
 		</plugins>
 	</build>
 	<!-- DEPENDENCIES -->
