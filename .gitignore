@@ -3,10 +3,6 @@ bin
 target
 .classpath
 .settings
-src/main/webapp/META-INF
 .idea
 *.iml
-.mymetadata
-.project
-.mymetadata
 *~
