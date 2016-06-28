@@ -1,8 +1,7 @@
 *.DS_Store
 bin
 target
-.classpath
-.settings
+build
 .idea
 *.iml
 *~
