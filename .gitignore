@@ -1,8 +1,18 @@
-*.DS_Store
-bin
+# ignore bytecode files
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# ignore Maven generated target folders and myeclipse output
 target
+bin
 build
-.idea
-*.iml
-*~
-WEB-INF/classes
+
+# ignore eclipse files
+.project
+.classpath
+.settings
+.metadata
