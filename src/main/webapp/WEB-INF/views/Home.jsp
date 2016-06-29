@@ -10,7 +10,6 @@
 		<!-- AngularJs  -->
 		<script src="${pageContext.request.contextPath}/bower_components/angular/angular.js"></script>
 
-
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 		<meta charset="utf-8"/>
 		<title>河南有线分销系统后台管理</title>
@@ -417,8 +416,14 @@
 		<script src="../assets/js/ace/ace.searchbox-autocomplete.js"></script>
 
 		<!-- angular-ui-->
+		<!--
 		<script src="http://cdn.bootcss.com/angular-ui-bootstrap/1.0.0/ui-bootstrap-tpls.js"></script>
+		-->
 		<script src="${pageContext.request.contextPath}/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+		<script src="${pageContext.request.contextPath}/bower_components/angular-animate/angular-animate.js"></script>
+		<script src="${pageContext.request.contextPath}/bower_components/angular-strap/dist/angular-strap.min.js"></script>
+		<script src="${pageContext.request.contextPath}/bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
+
 		<!-- Customized JS -->
 		<script src="${pageContext.request.contextPath}/luna.js"></script>
 		<script src="${pageContext.request.contextPath}/components/controllers.js"></script>

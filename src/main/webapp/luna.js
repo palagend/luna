@@ -1,7 +1,7 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-var app = angular.module('palagend.app', ['ui.router', 'ui.bootstrap', 'plagend.controllers']);
+var app = angular.module('palagend.app', ['ui.router','ngAnimate', 'mgcrea.ngStrap', 'plagend.controllers']);
 
 // 路由配置
 app.config(function($stateProvider, $urlRouterProvider) {

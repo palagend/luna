@@ -32,17 +32,20 @@
         </div>
     </div>
     <div class="space-4"></div>
+    <!-- Date range example -->
     <div class="form-group">
-        <label class="col-sm-3 control-label no-padding-right" for="form-field-3">
+        <label class="control-label">
+            <i class="fa fa-calendar"></i>
+            <i class="fa fa-arrows-h"></i>
+            <i class="fa fa-calendar"></i>
             有效期
-        </label>
-        <div class="col-sm-9">
-            <div>
-                <input type="text" ng-model="dt">
-                <div style="min-height:290px;">
-                    <div uib-datepicker ng-model="dt" class="well well-sm" datepicker-options="options"></div>
-                </div>
-            </div>
+            <small>(dynamic)</small>
+        </label><br>
+        <div class="form-group col-xs-6">
+            <input class="form-control" ng-model="fromDate" data-max-date="{{untilDate}}" placeholder="From" bs-datepicker type="text">
+        </div>
+        <div class="form-group col-xs-6">
+            <input class="form-control" ng-model="untilDate" data-min-date="{{fromDate}}" placeholder="Until" bs-datepicker type="text">
         </div>
     </div>
     <div class="space-4"></div>
@@ -52,7 +55,6 @@
                 <i class="ace-icon fa fa-check bigger-110"></i>
                 提交
             </button>
-
             &nbsp; &nbsp; &nbsp;
             <button class="btn" ng-class="reset()">
                 <i class="ace-icon fa fa-undo bigger-110"></i>
