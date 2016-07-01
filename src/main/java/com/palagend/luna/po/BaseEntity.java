@@ -14,9 +14,7 @@ public class BaseEntity implements Serializable {
 	private static final long serialVersionUID = -1610987282656161631L;
 
 	private Integer id;// id
-	@Column(name="create_time")
 	private Date createTime;// 创建时间
-	@Column(name="modify_time")
 	private Date modifyTime;// 修改时间
 
 	@Id
@@ -29,7 +27,7 @@ public class BaseEntity implements Serializable {
 		this.id = id;
 	}
 
-	@Column(updatable = false)
+	@Column(updatable = false,name="create_time")
 	public Date getCreateTime() {
 		return createTime;
 	}
@@ -38,7 +36,7 @@ public class BaseEntity implements Serializable {
 		this.createTime = createTime;
 	}
 
-	@Column
+	@Column(name="modify_time")
 	public Date getModifyTime() {
 		return modifyTime;
 	}

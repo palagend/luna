@@ -4,6 +4,11 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 /**
  * @author palagend
@@ -11,13 +16,14 @@ import javax.persistence.Entity;
  * @since 2016-5-15
  */
 @Entity
+@Table(name="t_commission_schema")
 public class CommissionSchema extends BaseEntity {
-	
+
 	@Override
 	public String toString() {
-		return "CommissionSchema [name=" + name + ", timeStart=" + timeStart
-				+ ", timeEnd=" + timeEnd + ", money=" + money + ", dedutct="
-				+ dedutct + ", rate=" + rate + "]";
+		return "CommissionSchema [name=" + name + ", fromDate=" + fromDate
+				+ ", untilDate=" + untilDate + ", money=" + money + ", deduct="
+				+ deduct + ", rate=" + rate + "]";
 	}
 
 	private static final long serialVersionUID = -7116747398868800410L;
@@ -30,12 +36,16 @@ public class CommissionSchema extends BaseEntity {
 	/**
 	 * 有效期起始
 	 */
-	private Date timeStart;
+	@JsonFormat(pattern="yyyy-MM-dd",timezone="GMT+8")//取日期时使用
+	@DateTimeFormat(pattern="yyyy-MM-dd")//存日期时使用
+	private Date fromDate;
 	
 	/**
 	 * 有效期结束
 	 */
-	private Date timeEnd;
+	@JsonFormat(pattern="yyyy-MM-dd",timezone="GMT+8")//取日期时使用
+	@DateTimeFormat(pattern="yyyy-MM-dd")//存日期时使用
+	private Date untilDate;
 	
 	/**
 	 * 交易金额
@@ -45,30 +55,12 @@ public class CommissionSchema extends BaseEntity {
 	/**
 	 * 分销商提成
 	 */
-	private int dedutct; 
+	private int deduct; 
 	
 	/**
 	 * 分销商在一次交易中获得的提成占交易额的比率(0-1)
 	 */
 	private float rate = 0.0f;
-
-	
-	
-	public Date getTimeStart() {
-		return timeStart;
-	}
-
-	public void setTimeStart(Date timeStart) {
-		this.timeStart = timeStart;
-	}
-
-	public Date getTimeEnd() {
-		return timeEnd;
-	}
-
-	public void setTimeEnd(Date timeEnd) {
-		this.timeEnd = timeEnd;
-	}
 
 	public float getMoney() {
 		return money;
@@ -78,12 +70,12 @@ public class CommissionSchema extends BaseEntity {
 		this.money = money;
 	}
 
-	public int getDedutct() {
-		return dedutct;
+	public int getDeduct() {
+		return deduct;
 	}
 
-	public void setDedutct(int dedutct) {
-		this.dedutct = dedutct;
+	public void setDeduct(int deduct) {
+		this.deduct = deduct;
 	}
 
 	@Column(unique = true, nullable = false)
@@ -108,6 +100,22 @@ public class CommissionSchema extends BaseEntity {
 	 */
 	public void setRate(float rate) {
 		this.rate = rate;
+	}
+	@Column(name="until_date")
+	public Date getUntilDate() {
+		return untilDate;
+	}
+
+	public void setUntilDate(Date untilDate) {
+		this.untilDate = untilDate;
+	}
+	@Column(name="from_date")
+	public Date getFromDate() {
+		return fromDate;
+	}
+
+	public void setFromDate(Date fromDate) {
+		this.fromDate = fromDate;
 	}
 
 }

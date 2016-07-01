@@ -4,16 +4,16 @@
 var app = angular.module('palagend.app', ['ui.router','ngAnimate', 'mgcrea.ngStrap', 'plagend.controllers']);
 
 // 路由配置
-app.config(function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise("/deduct");
+app.config(function($stateProvider, $urlRouterProvider ) {
+    $urlRouterProvider.otherwise("/member");
 
     $stateProvider
-        .state('state2', {
-            url: "/deduct",
+        .state('member', {
+            url: "/member",
             views: {
                 '': {
-                    templateUrl: '../html/deduct-config.html',
-                    controller: 'DeductCtrl'
+                    templateUrl: '../html/member.html',
+                    controller: 'MemberCtrl'
                 }
             }
         })

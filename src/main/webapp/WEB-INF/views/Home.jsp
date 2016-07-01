@@ -2,44 +2,26 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-CN">
 
 	<head>
-		<!-- jQuery -->
-		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-		<!-- AngularJs  -->
-		<script src="${pageContext.request.contextPath}/bower_components/angular/angular.js"></script>
-
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
 		<title>河南有线分销系统后台管理</title>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-
-		<!-- bootstrap & fontawesome -->
 		<link rel="stylesheet" href="../assets/css/bootstrap.css"/>
 		<link rel="stylesheet" href="../assets/css/font-awesome.css"/>
-
-		<!-- page specific plugin styles -->
-
-		<!-- text fonts -->
 		<link rel="stylesheet" href="../assets/css/ace-fonts.css"/>
-
-		<!-- ace styles -->
 		<link rel="stylesheet" href="../assets/css/ace.css" class="ace-main-stylesheet" id="main-ace-style"/>
-
-		<!--[if lte IE 9]> <link rel="stylesheet" href="../assets/css/ace-part2.css" class="ace-main-stylesheet" /> <![endif]-->
-
-		<!--[if lte IE 9]> <link rel="stylesheet" href="../assets/css/ace-ie.css" /> <![endif]-->
-
-		<!-- inline styles related to this page -->
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/bower_components/angular-ui-grid/ui-grid.min.css"/>
+		<link rel="stylesheet" href="../assets/css/luna.css"/>
 
 		<!-- ace settings handler -->
 		<script src="../assets/js/ace-extra.js"></script>
 
-		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
-
-		<!--[if lte IE 8]> <script src="../assets/js/html5shiv.js"></script> <script src="../assets/js/respond.js"></script> <![endif]-->
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="${pageContext.request.contextPath}/bower_components/angular/angular.js"></script>
 	</head>
 
 	<body class="no-skin">
@@ -51,7 +33,6 @@
 			</script>
 
 			<div class="navbar-container" id="navbar-container">
-				<!-- #section:basics/sidebar.mobile.toggle -->
 				<button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
 					<span class="sr-only">Toggle sidebar</span>
 
@@ -62,24 +43,15 @@
 					<span class="icon-bar"></span>
 				</button>
 
-				<!-- /section:basics/sidebar.mobile.toggle -->
 				<div class="navbar-header pull-left">
-					<!-- #section:basics/navbar.layout.brand -->
 					<a href="#" class="navbar-brand">
 						<small>
 							<i class="fa fa-leaf"></i>
 							Ace Admin
 						</small>
 					</a>
-
-					<!-- /section:basics/navbar.layout.brand -->
-
-					<!-- #section:basics/navbar.toggle -->
-
-					<!-- /section:basics/navbar.toggle -->
 				</div>
 
-				<!-- #section:basics/navbar.dropdown -->
 				<div class="navbar-buttons navbar-header pull-right" role="navigation">
 					<ul class="nav ace-nav">
 						<li class="grey">
@@ -220,7 +192,6 @@
 								</li>
 
 								<li class="divider"></li>
-
 								<li>
 									<a href="#">
 										<i class="ace-icon fa fa-power-off"></i>
@@ -229,14 +200,9 @@
 								</li>
 							</ul>
 						</li>
-
-						<!-- /section:basics/navbar.user_menu -->
 					</ul>
 				</div>
-
-				<!-- /section:basics/navbar.dropdown -->
 			</div>
-			<!-- /.navbar-container -->
 		</div>
 
 		<div class="main-container" id="main-container" ng-app="palagend.app">
@@ -257,7 +223,6 @@
 							<i class="ace-icon fa fa-pencil"></i>
 						</button>
 
-						<!-- #section:basics/sidebar.layout.shortcuts -->
 						<button class="btn btn-warning">
 							<i class="ace-icon fa fa-users"></i>
 						</button>
@@ -279,14 +244,13 @@
 						<span class="btn btn-danger"></span>
 					</div>
 				</div>
-				<!-- /.sidebar-shortcuts -->
 
 				<ul class="nav nav-list">
 					<li class="">
 						<a href="${pageContext.request.contextPath}/html/index.html">
 							<i class="menu-icon fa fa-tachometer"></i>
 							<span class="menu-text">
-								Dashboard
+								返回首页
 							</span>
 						</a>
 
@@ -307,49 +271,42 @@
 
 						<ul class="submenu">
 							<!-- Start Your Work Here ^_^ -->
-							<li class="">
-								<a ui-sref="state1">
-									<i class="menu-icon fa fa-caret-right"></i>
-									发布基础产品
-								</a>
 
-								<b class="arrow"></b>
-							</li>
 							<li class="">
-								<a ui-sref="state2">
+								<a ui-sref="member">
 									<i class="menu-icon fa fa-caret-right"></i>
-									配置分销商提成
+									分销商管理
 								</a>
 								<b class="arrow"></b>
 							</li>
 							<li class="">
-								<a href="${pageContext.request.contextPath}/html/elements.html">
+								<a ui-sref="broadcast">
 									<i class="menu-icon fa fa-caret-right"></i>
-									Elements
+									公告管理
 								</a>
-
 								<b class="arrow"></b>
 							</li>
-
 							<li class="">
-								<a href="${pageContext.request.contextPath}/html/buttons.html">
+								<a ui-sref="product">
 									<i class="menu-icon fa fa-caret-right"></i>
-									Buttons &amp; Icons
+									产品管理
 								</a>
-
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a ui-sref="promotion">
+									<i class="menu-icon fa fa-caret-right"></i>
+									优惠信息管理
+								</a>
 								<b class="arrow"></b>
 							</li>
 						</ul>
 					</li>
 				</ul>
-				<!-- /.nav-list -->
 
-				<!-- #section:basics/sidebar.layout.minimize -->
 				<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
 					<i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
 				</div>
-
-				<!-- /section:basics/sidebar.layout.minimize -->
 				<script type="text/javascript">
 					try {
 						ace.settings.check('sidebar', 'collapsed')
@@ -361,9 +318,7 @@
 				<div class="page-content">
 					<div class="row">
 						<div class="col-xs-12">
-							<!-- PAGE CONTENT BEGINS -->
 							<div class="widget-box" ui-view></div>
-							<!-- PAGE CONTENT ENDS -->
 						</div>
 						<!-- /.col -->
 					</div>
@@ -374,24 +329,6 @@
 
 		<!-- basic scripts -->
 		<script src="../assets/js/bootstrap.js"></script>
-		<!-- page specific plugin scripts -->
-		<!--
-		<script src="../assets/js/jquery-ui.custom.js"></script>
-		<script src="../assets/js/jquery.ui.touch-punch.js"></script>
-		<script src="../assets/js/chosen.jquery.js"></script>
-		<script src="../assets/js/fuelux/fuelux.spinner.js"></script>
-		<script src="../assets/js/date-time/bootstrap-datepicker.js"></script>
-		<script src="../assets/js/date-time/bootstrap-timepicker.js"></script>
-		<script src="../assets/js/date-time/moment.js"></script>
-		<script src="../assets/js/date-time/daterangepicker.js"></script>
-		<script src="../assets/js/date-time/bootstrap-datetimepicker.js"></script>
-		<script src="../assets/js/bootstrap-colorpicker.js"></script>
-		<script src="../assets/js/jquery.knob.js"></script>
-		<script src="../assets/js/jquery.autosize.js"></script>
-		<script src="../assets/js/jquery.inputlimiter.1.3.1.js"></script>
-		<script src="../assets/js/jquery.maskedinput.js"></script>
-		<script src="../assets/js/bootstrap-tag.js"></script>
-	-->
 		<!-- ace scripts -->
 		<script src="../assets/js/ace/elements.scroller.js"></script>
 		<script src="../assets/js/ace/elements.colorpicker.js"></script>
@@ -415,14 +352,11 @@
 		<script src="../assets/js/ace/ace.widget-on-reload.js"></script>
 		<script src="../assets/js/ace/ace.searchbox-autocomplete.js"></script>
 
-		<!-- angular-ui-->
-		<!--
-		<script src="http://cdn.bootcss.com/angular-ui-bootstrap/1.0.0/ui-bootstrap-tpls.js"></script>
-		-->
 		<script src="${pageContext.request.contextPath}/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 		<script src="${pageContext.request.contextPath}/bower_components/angular-animate/angular-animate.js"></script>
 		<script src="${pageContext.request.contextPath}/bower_components/angular-strap/dist/angular-strap.min.js"></script>
 		<script src="${pageContext.request.contextPath}/bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
+		<script src="${pageContext.request.contextPath}/bower_components/angular-ui-grid/ui-grid.js"></script>
 
 		<!-- Customized JS -->
 		<script src="${pageContext.request.contextPath}/luna.js"></script>
