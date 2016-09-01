@@ -1,5 +1,5 @@
-% Created 2016-09-01 四 20:06
-\documentclass[UTF8]{ctexart}
+% Created 2016-09-02 五 00:14
+\documentclass{ctexart}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{fixltx2e}
@@ -14,7 +14,6 @@
 \usepackage{marvosym}
 \usepackage{wasysym}
 \usepackage{amssymb}
-% \usepackage[CJKbookmarks, colorlinks, bookmarksnumbered=true,pdfstartview=FitH,linkcolor=black,citecolor=black]{hyperref}
 \usepackage[CJKbookmarks,colorlinks,linkcolor=black]{hyperref}
 \tolerance=1000
 \author{palagend}
@@ -33,7 +32,7 @@
 \label{sec-1}
 \subsection{基本信息}
 \label{sec-1-1}
-姓名:胡月恒\\
+\noindent 姓名:胡月恒\\
 性别:男\\
 学历:硕士(应届毕业生)\\
 出生年月:1990-10-09\\
@@ -43,7 +42,7 @@
 \subsubsection{Java}
 \label{sec-1-2-1}
 \begin{enumerate}
-\item java语言基础:oop,设计模式,io操作,socket编程,多线程,jdbc,java反射机制;
+\item java语言基础:OOP思想,设计模式,文件IO,socket编程,多线程,JDBC,java反射机制;
 \item web基础:http协议,servlet,jsp;
 \item 使用过的框架:Spring,Hibernate,JPA;
 \item 熟悉的开发工具:Atom,Eclipse,Tomcat,Jboss,Maven
@@ -51,7 +50,7 @@
 \subsubsection{Linux}
 \label{sec-1-2-2}
 \begin{enumerate}
-\item 熟悉的发行版:Fedora
+\item 熟悉的发行版:红帽系列
 \item 脚本编程:bash脚本编程
 \item 编辑器:vim,emacs,atom
 \item 编译工具:gcc
@@ -82,37 +81,39 @@
 \end{enumerate}
 \subsection{项目经验}
 \label{sec-1-4}
-\begin{enumerate}
-\item 1. 河南有线网络分销系统二期
-\label{sec-1-4-0-1}
+\subsubsection{河南有线网络接入认证系统}
+\label{sec-1-4-1}
+\noindent \textbf{项目描述}:这是我实习期间接受的第一个工作任务,为认证系统添加radius认证功能.这是一个比较老的项目,用的是EJB和jboss技术,框架采用的是struts.\\
+\textbf{项目经验}:第一次对旧项目做维护,感觉真的很棘手,因为之前并没有关注EJB和jboss,对struts这一过时的技术更是直接忽略;但是既然接手了任务,也只能
+硬着头皮往前冲了.我先是花了一个晚上的时间恶补了EJB和jboss的知识,然后写了一些小demo练练手熟悉熟悉.等了解RMI的工作原理,jboss和tomcat之
+间的关系之后,思路就清晰多了;接下来是阅读项目源码,理清逻辑结构(代码没有文档,真的很痛苦,花了不少时间).通过与业务人员的沟通,了解RADIUS认证的业务流程
+,然后就是写代码了,根据OSS传过来的指令,对RADIUS数据库作相应的CRUD操作(小case).\\回过头来想想这整个过程,大多时间是用在学习消化新知识上面了
+,而写代码本身并没有占用太多时间.这种经验,在课堂上肯定是学不来的.
+\subsubsection{河南有线网络分销系统二期\\}
+\label{sec-1-4-2}
+\noindent \textbf{涉及的技术}:Spring, Hibernate, EasyUI, MySQL\\
+\textbf{开发工具和平台}:MyEclipse, SVN, Atom\\
+\textbf{项目描述}:这是一个web项目,与河南有线合作的各级代理分销商可以通过这个平台,给用户缴纳上网费\\
+\textbf{项目经验}:说实话,这个项目的开发体验不好,正面经验不多,反面教训倒不少.首先是前期需求都还不确定的情况下,就要求马上开工,而且只给一个月的时间,要实现缴费,权限分配,产品宣传,报表打印,库存管理,界面还要美观大方,稳定可靠.希望开发完了马上上线,开发人员总共就两个.既要短平快,又要大而全,这倒还不算什么,与银行接口协议都还没谈好的情况下,就让我自己先定接口,程序先写着,说如果需求有变化,再改过来就是了(真的好无语).各部门之间扯皮,数据结构混乱,文档不全或几乎没有,有时候只能通过变量名揣测大概意思.进度还催得紧,一个月下来草草了事,后来又因为立项的矛盾而搁置了,整个过程开发体验不好.通过这次糟糕的开发体验,我意识到软件工程管理的重要性,如果管理不到位,开发工作几乎寸步难行.
+\subsubsection{基于百度地图SDK的手机定位App\\}
+\label{sec-1-4-3}
+\noindent \textbf{涉及的技术}:Baidu LBS,Android,java\\
+\textbf{开发工具和平台}:Android Studio,android手机\\
+\textbf{项目描述}:这是我作毕业论文期间需要采集车辆行驶数据而编写的一个手机端定位数据采集App,功能比较简单,就是采集驾驶员行车时的定位数据并保存到本地文件中,供后期分析处理;\\
+\textbf{项目收获}:本人主要学的是java,而安卓与java有着千丝万缕的亲缘关系,我也就尝试着做了一个android app.从android开发环境的搭建,到百度SDK的学习,从程序设计,在到app发布.整个过程都是自力更生,摸石头过河走过来的.虽然是半道出家搞android,但整个过程让我对android系统有了深入的了解.如果将来有转到android开发的需求应该不会太辛苦.\\
+\subsubsection{博客发布系统 \\}
+\label{sec-1-4-4}
 //TODO
-涉及的技术:
-开发工具和平台:
-项目描述:
-项目收获:
-\item 2. 基于百度地图SDK的手机定位App
-\label{sec-1-4-0-2}
-//TODO
-涉及的技术:
-开发工具和平台:
-项目描述:
-项目收获:
-\item 3.搭建个人网站
-\label{sec-1-4-0-3}
-//TODO
-\end{enumerate}
 \subsection{所获奖项或证书}
 \label{sec-1-5}
-\begin{enumerate}
-\item 高级软件工程师;\\
-\item 高级数据库管理工程师;\\
-\item 系统分析师;\\
-\item 英语六级;\\
-\item 全国大学生电子设计大赛一等奖;\\
-\item 郑大学业奖学金;\\
-\item 驾驶证;\\
-\item 优秀班干部;\\
-\end{enumerate}
+高级软件工程师;
+高级数据库管理工程师;
+系统分析师;
+英语六级;
+全国大学生电子设计大赛一等奖;
+研究生学业奖学金;
+驾驶证;
+优秀班干部;
 \subsection{兴趣爱好}
 \label{sec-1-6}
 捣鼓linux,看博客,读书,听歌,爱运动
