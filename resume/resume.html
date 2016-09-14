@@ -1,66 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>resume</title>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-<meta name="title" content="resume"/>
-<meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2016-09-02 09:50:40 中国标准时间"/>
-<meta name="author" content=""/>
-<meta name="description" content=""/>
-<meta name="keywords" content=""/>
+<!-- 2016-09-14 三 20:30 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="pal" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
-  html { font-family: Times, serif; font-size: 12pt; }
   .title  { text-align: center; }
-  .todo   { color: red; }
+  .todo   { font-family: monospace; color: red; }
   .done   { color: green; }
-  .tag    { background-color: #add8e6; font-weight:normal }
-  .target { }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
   .timestamp { color: #bebebe; }
   .timestamp-kwd { color: #5f9ea0; }
-  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
-  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
-  .center {margin-left:auto; margin-right:auto; text-align:center;}
-  p.verse { margin-left: 3% }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
   pre {
-	border: 1pt solid #AEBDCC;
-	background-color: #F3F5F7;
-	padding: 5pt;
-	font-family: courier, monospace;
-        font-size: 90%;
-        overflow:auto;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
   }
-  table { border-collapse: collapse; }
-  td, th { vertical-align: top;  }
-  th.right  { text-align:center;  }
-  th.left   { text-align:center;   }
-  th.center { text-align:center; }
-  td.right  { text-align:right;  }
-  td.left   { text-align:left;   }
-  td.center { text-align:center; }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
   dt { font-weight: bold; }
-  div.figure { padding: 0.5em; }
-  div.figure p { text-align: center; }
-  div.inlinetask {
-    padding:10px;
-    border:2px solid gray;
-    margin:10px;
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
     background: #ffffcc;
   }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
   textarea { overflow-x: auto; }
-  .linenr { font-size:smaller }
-  .code-highlighted {background-color:#ffff00;}
-  .org-info-js_info-navigation { border-style:none; }
-  #org-info-js_console-label { font-size:10px; font-weight:bold;
-                               white-space:nowrap; }
-  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
-                                 font-weight:bold; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
   /*]]>*/-->
 </style>
 <script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
 <!--/*--><![CDATA[/*><!--*/
  function CodeHighlightOn(elem, id)
  {
@@ -82,85 +134,67 @@
  }
 /*]]>*///-->
 </script>
-
 </head>
 <body>
-
-<div id="preamble">
-
-</div>
-
 <div id="content">
 <h1 class="title">resume</h1>
-
-
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1 个人简历</a>
+<li><a href="#sec-1">1. 个人简历</a>
 <ul>
-<li><a href="#sec-1-1">1.1 基本信息</a></li>
-<li><a href="#sec-1-2">1.2 技能描述</a>
+<li><a href="#sec-1-1">1.1. 基本信息</a></li>
+<li><a href="#sec-1-2">1.2. 技能描述</a>
 <ul>
-<li><a href="#sec-1-2-1">1.2.1 Java</a></li>
-<li><a href="#sec-1-2-2">1.2.2 Linux</a></li>
-<li><a href="#sec-1-2-3">1.2.3 数据库</a></li>
-<li><a href="#sec-1-2-4">1.2.4 其他</a></li>
+<li><a href="#sec-1-2-1">1.2.1. Java</a></li>
+<li><a href="#sec-1-2-2">1.2.2. Linux</a></li>
+<li><a href="#sec-1-2-3">1.2.3. 数据库</a></li>
+<li><a href="#sec-1-2-4">1.2.4. 其他</a></li>
 </ul>
 </li>
-<li><a href="#sec-1-3">1.3 校内实践</a></li>
-<li><a href="#sec-1-4">1.4 项目经验</a>
+<li><a href="#sec-1-3">1.3. 校内实践</a></li>
+<li><a href="#sec-1-4">1.4. 项目经验</a>
 <ul>
-<li><a href="#sec-1-4-1">1.4.1 河南有线网络接入认证系统</a></li>
-<li><a href="#sec-1-4-2">1.4.2 河南有线网络分销系统二期</a></li>
-<li><a href="#sec-1-4-3">1.4.3 基于百度地图SDK的手机定位App</a></li>
-<li><a href="#sec-1-4-4">1.4.4 博客发布系统</a></li>
+<li><a href="#sec-1-4-1">1.4.1. 河南有线网络接入认证系统</a></li>
+<li><a href="#sec-1-4-2">1.4.2. 河南有线网络分销系统二期</a></li>
+<li><a href="#sec-1-4-3">1.4.3. 基于百度地图SDK的手机定位App</a></li>
+<li><a href="#sec-1-4-4">1.4.4. 博客发布系统</a></li>
 </ul>
 </li>
-<li><a href="#sec-1-5">1.5 所获奖项或证书</a></li>
-<li><a href="#sec-1-6">1.6 兴趣爱好</a></li>
-<li><a href="#sec-1-7">1.7 自我评价</a></li>
+<li><a href="#sec-1-5">1.5. 所获奖项或证书</a></li>
+<li><a href="#sec-1-6">1.6. 兴趣爱好</a></li>
+<li><a href="#sec-1-7">1.7. 自我评价</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-
-<div id="outline-container-1" class="outline-2">
+<div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1"><span class="section-number-2">1</span> 个人简历</h2>
 <div class="outline-text-2" id="text-1">
-
-
-</div>
-
-<div id="outline-container-1-1" class="outline-3">
+</div><div id="outline-container-sec-1-1" class="outline-3">
 <h3 id="sec-1-1"><span class="section-number-3">1.1</span> 基本信息</h3>
 <div class="outline-text-3" id="text-1-1">
-
-<p>姓名:胡月恒<br/>
-性别:男<br/>
-学历:硕士(应届毕业生)<br/>
-手机:13323833820<br/>
-邮箱:palagend@163.com<br/>
-出生年月:1990-10-09<br/>
-专业:测试计量技术及仪器(嵌入式方向)<br/>
-</p></div>
-
+<p>
+姓名:胡月恒<br  />
+性别:男<br  />
+应聘岗位:Java软件工程师<br  />
+学历:硕士(应届毕业生)<br  />
+手机:13323833820<br  />
+邮箱:palagend@163.com<br  />
+出生年月:1990-10-09<br  />
+专业:测试计量技术及仪器(嵌入式方向)<br  />
+</p>
 </div>
-
-<div id="outline-container-1-2" class="outline-3">
+</div>
+<div id="outline-container-sec-1-2" class="outline-3">
 <h3 id="sec-1-2"><span class="section-number-3">1.2</span> 技能描述</h3>
 <div class="outline-text-3" id="text-1-2">
-
-
-</div>
-
-<div id="outline-container-1-2-1" class="outline-4">
+</div><div id="outline-container-sec-1-2-1" class="outline-4">
 <h4 id="sec-1-2-1"><span class="section-number-4">1.2.1</span> Java</h4>
 <div class="outline-text-4" id="text-1-2-1">
-
-<ol>
+<ol class="org-ol">
 <li>java语言基础:OOP思想,设计模式,文件IO,socket编程,多线程,JDBC,java反射机制;
 </li>
 <li>web基础:http,servlet,jsp;
@@ -170,16 +204,12 @@
 <li>熟悉的开发工具:Atom,Eclipse,Tomcat,Jboss,Maven
 </li>
 </ol>
-
 </div>
-
 </div>
-
-<div id="outline-container-1-2-2" class="outline-4">
+<div id="outline-container-sec-1-2-2" class="outline-4">
 <h4 id="sec-1-2-2"><span class="section-number-4">1.2.2</span> Linux</h4>
 <div class="outline-text-4" id="text-1-2-2">
-
-<ol>
+<ol class="org-ol">
 <li>熟悉的发行版:红帽系列
 </li>
 <li>脚本编程:bash脚本编程
@@ -189,16 +219,12 @@
 <li>编译工具:gcc
 </li>
 </ol>
-
 </div>
-
 </div>
-
-<div id="outline-container-1-2-3" class="outline-4">
+<div id="outline-container-sec-1-2-3" class="outline-4">
 <h4 id="sec-1-2-3"><span class="section-number-4">1.2.3</span> 数据库</h4>
 <div class="outline-text-4" id="text-1-2-3">
-
-<ol>
+<ol class="org-ol">
 <li>基础:SQL
 </li>
 <li>MySQL(MariaDB):复杂查询,数据库备份,数据库范式
@@ -206,16 +232,12 @@
 <li>Oracle:oracle工作原理
 </li>
 </ol>
-
 </div>
-
 </div>
-
-<div id="outline-container-1-2-4" class="outline-4">
+<div id="outline-container-sec-1-2-4" class="outline-4">
 <h4 id="sec-1-2-4"><span class="section-number-4">1.2.4</span> 其他</h4>
 <div class="outline-text-4" id="text-1-2-4">
-
-<ol>
+<ol class="org-ol">
 <li>Javascript,Python,Php;
 </li>
 <li>jQuery,Angular,easyui;
@@ -225,17 +247,13 @@
 <li>Android
 </li>
 </ol>
-
 </div>
 </div>
-
 </div>
-
-<div id="outline-container-1-3" class="outline-3">
+<div id="outline-container-sec-1-3" class="outline-3">
 <h3 id="sec-1-3"><span class="section-number-3">1.3</span> 校内实践</h3>
 <div class="outline-text-3" id="text-1-3">
-
-<ol>
+<ol class="org-ol">
 <li>乒乓球赛;
 </li>
 <li>组织专业同学聚会;
@@ -247,72 +265,61 @@
 <li>在河南有线实习期间参与认证系统的维护和二次开发;
 </li>
 </ol>
-
 </div>
-
 </div>
-
-<div id="outline-container-1-4" class="outline-3">
+<div id="outline-container-sec-1-4" class="outline-3">
 <h3 id="sec-1-4"><span class="section-number-3">1.4</span> 项目经验</h3>
 <div class="outline-text-3" id="text-1-4">
-
-
-</div>
-
-<div id="outline-container-1-4-1" class="outline-4">
+</div><div id="outline-container-sec-1-4-1" class="outline-4">
 <h4 id="sec-1-4-1"><span class="section-number-4">1.4.1</span> 河南有线网络接入认证系统</h4>
 <div class="outline-text-4" id="text-1-4-1">
-
-<p><b>项目描述</b>:这是我实习期间接受的第一个工作任务,为认证系统添加radius认证功能.这是一个比较老的项目,用的是EJB和jboss技术,框架采用的是struts.<br/>
+<p>
+<b>项目描述</b>:这是我实习期间接受的第一个工作任务,为认证系统添加radius认证功能.这是一个比较老的项目,用的是EJB和jboss技术,框架采用的是struts.<br  />
 <b>项目经验</b>:第一次对旧项目做维护,感觉真的很棘手,因为之前并没有关注EJB和jboss,对struts这一过时的技术更是直接忽略;但是既然接手了任务,也只能
 硬着头皮往前冲了.我先是花了一个晚上的时间恶补了EJB和jboss的知识,然后写了一些小demo练练手熟悉熟悉.等了解RMI的工作原理,jboss和tomcat之
 间的关系之后,思路就清晰多了;接下来是阅读项目源码,理清逻辑结构(代码没有文档,真的很痛苦,花了不少时间).通过与业务人员的沟通,了解RADIUS认证的业务流程
 ,然后就是写代码了,根据OSS传过来的指令,对RADIUS数据库作相应的CRUD操作(小case).回过头来想想这整个过程,大多时间是用在学习消化新知识上面了
 ,而写代码本身并没有占用太多时间.这种经验,在课堂上肯定是学不来的.
-</p></div>
-
+</p>
 </div>
-
-<div id="outline-container-1-4-2" class="outline-4">
+</div>
+<div id="outline-container-sec-1-4-2" class="outline-4">
 <h4 id="sec-1-4-2"><span class="section-number-4">1.4.2</span> 河南有线网络分销系统二期</h4>
 <div class="outline-text-4" id="text-1-4-2">
-
-<p><b>涉及的技术</b>:Spring, Hibernate, EasyUI, MySQL<br/>
-<b>开发工具和平台</b>:MyEclipse, SVN, Atom<br/>
-<b>项目描述</b>:这是一个web项目,与河南有线合作的各级代理分销商可以通过这个平台,给用户缴纳上网费<br/>
+<p>
+<b>涉及的技术</b>:Spring, Hibernate, EasyUI, MySQL<br  />
+<b>开发工具和平台</b>:MyEclipse, SVN, Atom<br  />
+<b>项目描述</b>:这是一个web项目,与河南有线合作的各级代理分销商可以通过这个平台,给用户缴纳上网费<br  />
 <b>项目经验</b>:说实话,这个项目的开发体验并不好,但也吸取了不少反面教训.首先是前期需求都还不确定的情况下,就要求马上开工,而且只给一个月的时间,要实现缴费,权限分配,产品宣传,报表打印,库存管理,界面还要美观大方,稳定可靠,希望开发完了马上上线,然而开发人员总共就两个.既要短平快,又要大而全,这倒还不算什么,与银行接口协议都还没谈好的情况下,就让我自己先定接口,程序先写着,说如果需求有变化,再改过来就是了(真的好无语).各部门之间扯皮,数据结构混乱,文档不全或几乎没有,有时候只能通过变量名揣测大概意思.另外进度还催得很紧,
 为了赶工期,我前端选用了一个Ace模板作为框架,一些控件直接套用EasyUI,因为催得紧,人手又不够,代码大多是只求运行通过,优化比较少.一个月下来勉强完成了任务,但是整体的开发体验真的不好,虽然能运行,但是代码写的很乱.通过这一次糟糕的开发体验,我明白了,软件开发不只是纯技术的问题,软件的管理也是相当重要的,如果管理不到位,倚天剑也会被用成了砍柴刀.
-</p></div>
-
+</p>
 </div>
-
-<div id="outline-container-1-4-3" class="outline-4">
+</div>
+<div id="outline-container-sec-1-4-3" class="outline-4">
 <h4 id="sec-1-4-3"><span class="section-number-4">1.4.3</span> 基于百度地图SDK的手机定位App</h4>
 <div class="outline-text-4" id="text-1-4-3">
-
-<p><b>涉及的技术</b>:Baidu LBS,Android,java<br/>
-<b>开发工具和平台</b>:Android Studio,android手机<br/>
-<b>项目描述</b>:这是我作毕业论文期间需要采集车辆行驶数据而编写的一个手机端定位数据采集App,功能比较简单,就是采集驾驶员行车时的定位数据并保存到本地文件中,供后期分析处理;<br/>
-<b>项目收获</b>:本人主要学的是java,而安卓与java有着千丝万缕的亲缘关系,我也就尝试着做了一个android app.从android开发环境的搭建,到百度SDK的学习,从程序设计,在到app发布.整个过程都是自力更生,摸石头过河走过来的.虽然是半道出家搞android,但整个过程让我对android系统有了深入的了解.如果将来有转到android开发的需求应该不会太辛苦.<br/>
-</p></div>
-
+<p>
+<b>涉及的技术</b>:Baidu LBS,Android,java<br  />
+<b>开发工具和平台</b>:Android Studio,android手机<br  />
+<b>项目描述</b>:这是我作毕业论文期间需要采集车辆行驶数据而编写的一个手机端定位数据采集App,功能比较简单,就是采集驾驶员行车时的定位数据并保存到本地文件中,供后期分析处理;<br  />
+<b>项目收获</b>:本人主要学的是java,而安卓与java有着千丝万缕的亲缘关系,我也就尝试着做了一个android app.从android开发环境的搭建,到百度SDK的学习,从程序设计,在到app发布.整个过程都是自力更生,摸石头过河走过来的.虽然是半道出家搞android,但整个过程让我对android系统有了深入的了解.如果将来有转到android开发的需求应该不会太辛苦.<br  />
+</p>
 </div>
-
-<div id="outline-container-1-4-4" class="outline-4">
+</div>
+<div id="outline-container-sec-1-4-4" class="outline-4">
 <h4 id="sec-1-4-4"><span class="section-number-4">1.4.4</span> 博客发布系统</h4>
 <div class="outline-text-4" id="text-1-4-4">
-
-<p>经过之前糟糕的开发体验,我也找了自身的原因,技能还是不扎实,面对快节奏时才会手忙脚乱.于是抽了一段时间学习Spring的源码,并结合设计模式的书籍理解大神的设计艺术,但是总有点空空的感觉;于是我想到做一个玩具项目当做自己的练兵场,尽量把平时学到的新知识运用到这个项目中以巩固自己.项目托管在Github上(<a href="http://github.com/palagend/luna">博客发布系统</a>),git的版本控制日志可以当做自己的学习笔记.
-</p></div>
+<p>
+经过之前糟糕的开发体验,我也找了自身的原因,技能还是不扎实,面对快节奏时才会手忙脚乱.于是抽了一段时间学习Spring的源码,并结合设计模式的书籍理解大神的设计艺术,但是总有点空空的感觉;于是我想到做一个玩具项目当做自己的练兵场,尽量把平时学到的新知识运用到这个项目中以巩固自己.项目托管在Github上(<a href="http://github.com/palagend/luna">博客发布系统</a>),git的版本控制日志可以当做自己的学习笔记.
+</p>
 </div>
-
 </div>
-
-<div id="outline-container-1-5" class="outline-3">
+</div>
+<div id="outline-container-sec-1-5" class="outline-3">
 <h3 id="sec-1-5"><span class="section-number-3">1.5</span> 所获奖项或证书</h3>
 <div class="outline-text-3" id="text-1-5">
-
-<p>高级软件工程师;
+<p>
+高级软件工程师;
 高级数据库管理工程师;
 系统分析师;
 英语六级;
@@ -320,43 +327,37 @@
 研究生学业奖学金;
 优秀班干部;
 驾驶证;
-</p></div>
-
+</p>
 </div>
-
-<div id="outline-container-1-6" class="outline-3">
+</div>
+<div id="outline-container-sec-1-6" class="outline-3">
 <h3 id="sec-1-6"><span class="section-number-3">1.6</span> 兴趣爱好</h3>
 <div class="outline-text-3" id="text-1-6">
-
-<p>捣鼓linux,看博客,读书,听歌,爱运动
-</p></div>
-
+<p>
+捣鼓linux,看博客,读书,听歌,爱运动
+</p>
 </div>
-
-<div id="outline-container-1-7" class="outline-3">
+</div>
+<div id="outline-container-sec-1-7" class="outline-3">
 <h3 id="sec-1-7"><span class="section-number-3">1.7</span> 自我评价</h3>
 <div class="outline-text-3" id="text-1-7">
-
-<ol>
-<li>自学能力强. 当我面对陌生的新技术时,不会束手无策,而是通过上网搜索或是翻阅书籍自主学习新知识;在检索信息的过程中注重检索技巧, 首先粗略搜索,逛逛论坛看看博客,获取感性上的认识;然后,逐步缩小搜索范围,再阅读官方英文文档深入研究,直到get新技能.<br/>
+<ol class="org-ol">
+<li>自学能力强. 当我面对陌生的新技术时,不会束手无策,而是通过上网搜索或是翻阅书籍自主学习新知识;在检索信息的过程中注重检索技巧, 首先粗略搜索,逛逛论坛看看博客,获取感性上的认识;然后,逐步缩小搜索范围,再阅读官方英文文档深入研究,直到get新技能.<br  />
 </li>
-<li>专注. 当我想做成一件事时,会自动屏蔽外界的干扰,整个脑子都被自己所想的事情给占据了,这样的发呆状态甚至会被朋友误以为抑郁了.<br/>
+<li>专注. 当我想做成一件事时,会自动屏蔽外界的干扰,整个脑子都被自己所想的事情给占据了,这样的发呆状态甚至会被朋友误以为抑郁了.<br  />
 </li>
 <li>"悲观"的豁达者. 这个"悲观"的意思不是指通常意义上的那种对生活不抱希望的意思.真正的意思是,我不大相信生活会有什么奇迹发生,对任何事情都是做好最坏的打算,然后想出尽可能多的应对方案.豁达是指,对木已成舟的过往琐事不去懊悔计较,免得让自己心烦.总之,大概就是"听天命,尽人事"的意思吧.
 </li>
 </ol>
-
 </div>
 </div>
 </div>
 </div>
-
-<div id="postamble">
-<p class="date">Date: 2016-09-02 09:50:40 中国标准时间</p>
-<p class="author">Author: </p>
-<p class="creator">Org version 7.8.11 with Emacs version 24</p>
-<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
-
+<div id="postamble" class="status">
+<p class="author">Author: pal</p>
+<p class="date">Created: 2016-09-14 三 20:30</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
