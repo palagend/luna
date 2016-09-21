@@ -12,6 +12,6 @@
 \contentsline {subsubsection}{\numberline {1.6.1}河南有线网络接入认证系统}{5}{subsubsection.1.6.1}
 \contentsline {subsubsection}{\numberline {1.6.2}基于百度地图SDK的手机定位App}{5}{subsubsection.1.6.2}
 \contentsline {subsubsection}{\numberline {1.6.3}博客发布系统}{6}{subsubsection.1.6.3}
-\contentsline {subsection}{\numberline {1.7}所获奖项或证书}{6}{subsection.1.7}
+\contentsline {subsection}{\numberline {1.7}所获奖项和证书}{6}{subsection.1.7}
 \contentsline {subsection}{\numberline {1.8}兴趣爱好}{6}{subsection.1.8}
 \contentsline {subsection}{\numberline {1.9}自我评价}{6}{subsection.1.9}

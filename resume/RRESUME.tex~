@@ -1,5 +1,5 @@
-% Created 2016-09-21 三 20:44
-\documentclass[11pt]{article}
+% Created 2016-09-21 三 20:24
+\documentclass[12pt]{ctexart}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{fixltx2e}
@@ -14,7 +14,7 @@
 \usepackage{marvosym}
 \usepackage{wasysym}
 \usepackage{amssymb}
-\usepackage{hyperref}
+\usepackage[CJKbookmarks, colorlinks, linkcolor=black]{hyperref}
 \tolerance=1000
 \author{pal}
 \date{\today}
@@ -32,7 +32,7 @@
 \label{sec-1}
 \subsection{基本信息}
 \label{sec-1-1}
-姓名:胡月恒\\
+\noindent{姓名:胡月恒\\}
 性别:男\\
 应聘岗位:Java软件工程师\\
 学历:硕士(应届毕业生)\\
@@ -40,7 +40,7 @@
 邮箱:palagend@163.com\\
 籍贯:信阳\\
 期望城市:武汉+杭州+上海\\
-出生年月:1990-10-09\\
+出生年月:1990\ -\ 10\ -\ 09\\
 专业:测试计量技术及仪器(嵌入式方向)\\
 \subsection{技能描述}
 \label{sec-1-2}
@@ -74,7 +74,7 @@
 \end{enumerate}
 \subsection{教育经历}
 \label{sec-1-3}
-2014年09月01日-2017年06月01日 | 郑州大学 | 硕士研究生\\
+\noindent{2014年09月01日-2017年06月01日 | 郑州大学 | 硕士研究生\\}
 受教育类型： 全日制统分统招\\
 研究方向： 嵌入式技术\\
 院系： 物理工程学院\\
@@ -89,30 +89,26 @@
 主要专业课程： C/C++程序设计，MATLAB，测量方法，单片机编程，微机原理\\
 \subsection{活动实践}
 \label{sec-1-4}
-\textbf{校内活动} ： 参见校羽毛球比赛;
+\noindent{*校内活动*： 参见校羽毛球比赛;|
 组织新同学聚会;
 参加院系迎新晚会的文艺出演;\\
-\textbf{社会实践} ： 参加由郑州大学委托给郑州达内科技组织的为期4个月的java软件实训活动.其间学习了JavaSE,JavaEE,Oracle,JavaScript等IT技术;练习项目主要有云笔记和电信
+*社会实践*： 参加由郑州大学委托给郑州达内科技组织的为期4个月的java软件实训活动.其间学习了JavaSE,JavaEE,Oracle,JavaScript等IT技术;练习项目主要有云笔记和电信
 运营商服务租赁计费系统.
 \subsection{实习经验}
 \label{sec-1-5}
-2016年03月07日-2017年01月01日\\
+\noindent{2016年03月07日\ -\ 2017年01月01日\\}
 实习单位： 河南有线\\
 职位：程序员\\
-职位月薪(税前)： 4000\textasciitilde{}6000元/月\\
+职位月薪(税前)： 4000\\
 工作描述： 本人在河南有线实习期间负责协助部门主管维护河南有线网络接入认证系统项目的维护和二次开发工作以及机房巡检工作.本人在工作中的主要贡献是: 1.对
 旧代码做了部分优化,发现了程序读取配置信息的硬编码问题,将代码中的配置信息抽离到外部配置文件中,针对过于庞大的类进行分割,提高了程序的灵活性和健壮性. 2.
 在机房巡检期间,利用实验服务器,自学并成功搭建了PXE安装linux操作系统的环境.\\
-证明人姓名： 裴红星\\
-证明人关系： 导师\\
-证明人职务： 副教授\\
-证明人单位： 郑州大学\\
-证明人联系方式： 15690852281\\
+证明人：裴红星\ 导师\ 郑州大学\ 15690852281\\
 \subsection{项目经验}
 \label{sec-1-6}
 \subsubsection{河南有线网络接入认证系统}
 \label{sec-1-6-1}
-\textbf{项目描述}:这是我实习期间接受的第一个工作任务,为认证系统添加radius认证功能.这是一个比较老的项目,用的是EJB和jboss技术,框架采用的是struts.\\
+\noindent{\textbf{项目描述}:这是我实习期间接受的第一个工作任务,为认证系统添加radius认证功能.这是一个比较老的项目,用的是EJB和jboss技术,框架采用的是struts.\\}
 \textbf{项目经验}:第一次对旧项目做维护,感觉真的很棘手,因为之前并没有关注EJB和jboss,对struts这一过时的技术更是直接忽略;但是既然接手了任务,也只能
 硬着头皮往前冲了.我先是花了一个晚上的时间恶补了EJB和jboss的知识,然后写了一些小demo练练手熟悉熟悉.等了解RMI的工作原理,jboss和tomcat之
 间的关系之后,思路就清晰多了;接下来是阅读项目源码,理清逻辑结构(代码没有文档,真的很痛苦,花了不少时间).通过与业务人员的沟通,了解RADIUS认证的业务流程
@@ -120,7 +116,7 @@
 ,而写代码本身并没有占用太多时间.这种经验,在课堂上肯定是学不来的.
 \subsubsection{基于百度地图SDK的手机定位App}
 \label{sec-1-6-2}
-\textbf{涉及的技术}:Baidu LBS,Android,java\\
+\noindent{\textbf{涉及的技术}:Baidu LBS,Android,java\\}
 \textbf{开发工具和平台}:Android Studio,android手机\\
 \textbf{项目描述}:这是我作毕业论文期间需要采集车辆行驶数据而编写的一个手机端定位数据采集App,功能比较简单,就是采集驾驶员行车时的定位数据并保存到本地文件中,供后期分析处理;\\
 \textbf{项目收获}:本人主要学的是java,而安卓与java有着千丝万缕的亲缘关系,我也就尝试着做了一个android app.从android开发环境的搭建,到百度SDK的学习,从程序设计,在到app发布.整个过程都是自力更生,摸石头过河走过来的.虽然是半道出家搞android,但整个过程让我对android系统有了深入的了解.如果将来有转到android开发的需求应该不会太辛苦.\\

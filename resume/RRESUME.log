@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.8.25)  21 SEP 2016 20:37
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.8.25)  21 SEP 2016 21:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**\input resume.tex
-(./resume.tex (/usr/local/texlive/2016/texmf-dist/tex/latex/ctex/ctexart.cls
+**\input RRESUME.tex
+(./RRESUME.tex (/usr/local/texlive/2016/texmf-dist/tex/latex/ctex/ctexart.cls
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2016/05/18 v6512 L3 programming layer (loader) 
 
@@ -1477,38 +1477,38 @@ tly
 )
 \Hy@SectionHShift=\skip69
 )
-(./resume.aux)
-\openout1 = `resume.aux'.
+(./RRESUME.aux)
+\openout1 = `RRESUME.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 26.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 25.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 25.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 26.
+LaTeX Info: Redefining \selectfont on input line 25.
 
 *** you should *not* be loading the inputenc package
 *** XeTeX expects the source to be in UTF8 encoding
@@ -1520,56 +1520,56 @@ LaTeX Info: Redefining \selectfont on input line 26.
 .................................................
 \symlegacymaths=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 26.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 26.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 26.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 26.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 26.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 26.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 26.
-LaTeX Font Info:    Redeclaring math accent \check on input line 26.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 26.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 26.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 26.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 26.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 26.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 25.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 25.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 25.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 25.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 25.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 25.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 25.
+LaTeX Font Info:    Redeclaring math accent \check on input line 25.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 25.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 25.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 25.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 25.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 26.
+(Font)              `operators' in the math version `normal' on input line 25.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/lmr/m/n on input line 26.
+(Font)                  OT1/cmr/m/n --> EU1/lmr/m/n on input line 25.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 26.
+(Font)              `operators' in the math version `bold' on input line 25.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU1/lmr/m/n on input line 26.
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/m/n on input line 25.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 26.
+(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 25.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU1/lmr/m/it on input line 26.
+(Font)                  OT1/cmr/m/it --> EU1/lmr/m/it on input line 25.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU1/lmr/bx/n on input line 26.
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/bx/n on input line 25.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 26.
+(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 25.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 26.
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 25.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 26.
+(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 25.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> EU1/lmr/bx/it on input line 26.
+(Font)                  OT1/cmr/bx/it --> EU1/lmr/bx/it on input line 25.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 26.
+(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 25.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 26.
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 25.
 \AtBeginShipoutBox=\box65
 (/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
@@ -1580,7 +1580,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: xetex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 26.
+Package hyperref Info: Link coloring ON on input line 25.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1590,34 +1590,38 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count169
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
+LaTeX Info: Redefining \ref on input line 25.
+LaTeX Info: Redefining \pageref on input line 25.
+LaTeX Info: Redefining \nameref on input line 25.
 
-(./resume.out) (./resume.out)
+(./RRESUME.out) (./RRESUME.out)
 \@outlinefile=\write3
-\openout3 = `resume.out'.
+\openout3 = `RRESUME.out'.
 
-LaTeX Font Info:    Try loading font information for U+wasy on input line 29.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 28.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+LaTeX Font Info:    Try loading font information for U+msa on input line 28.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+LaTeX Font Info:    Try loading font information for U+msb on input line 28.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./resume.toc)
+)
+
+LaTeX Warning: No \author given.
+
+(./RRESUME.toc)
 \tf@toc=\write4
-\openout4 = `resume.toc'.
+\openout4 = `RRESUME.toc'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--45
+Underfull \hbox (badness 10000) in paragraph at lines 34--44
 
  []
 
@@ -1627,7 +1631,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--45
 LaTeX Font Info:    Font shape `EU1/FandolSong-Regular(0)/m/sl' in size <12> no
 t available
 (Font)              Font shape `EU1/FandolSong-Regular(0)/m/it' tried instead o
-n input line 60.
+n input line 59.
  [2]
 Missing character: There is no 年 in font [FandolSong-Regular.otf]/OT:!
 Missing character: There is no 年 in font [FandolSong-Regular.otf]/OT:!
@@ -1641,68 +1645,51 @@ Missing character: There is no 量 in font [FandolSong-Regular.otf]/OT:!
 Missing character: There is no 量 in font [FandolSong-Regular.otf]/OT:!
 Missing character: There is no 理 in font [FandolSong-Regular.otf]/OT:!
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--90
+Underfull \hbox (badness 10000) in paragraph at lines 76--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--90
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--90
+Underfull \hbox (badness 10000) in paragraph at lines 76--88
 
  []
 
 [3]
 Missing character: There is no ; in font ec-lmr12!
 Missing character: There is no ; in font ec-lmr12!
-Missing character: There is no ; in font ec-lmr12!
-Missing character: There is no ; in font ec-lmr12!
 Missing character: There is no 年 in font [FandolSong-Regular.otf]/OT:!
 Missing character: There is no 年 in font [FandolSong-Regular.otf]/OT:!
 Missing character: There is no 行 in font [FandolSong-Regular.otf]/OT:!
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--107
+Underfull \hbox (badness 10000) in paragraph at lines 94--102
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 119--123
+Underfull \hbox (badness 10000) in paragraph at lines 114--118
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
-
- []
-
-[6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
- [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
- (./resume.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 147.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 147.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 142.
+ [6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 142.
+ (./RRESUME.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 142.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 142.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 142.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 92 ({)
+### simple group (level 1) entered at line 90 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 27766 strings out of 493589
- 526805 string characters out of 6143512
- 512122 words of memory out of 5000000
- 30900 multiletter control sequences out of 15000+600000
- 36835 words of font info for 78 fonts, out of 8000000 for 9000
+ 27769 strings out of 493589
+ 526920 string characters out of 6143512
+ 512137 words of memory out of 5000000
+ 30902 multiletter control sequences out of 15000+600000
+ 36843 words of font info for 79 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 63i,6n,77p,10446b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,6n,77p,10447b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on resume.pdf (7 pages).
+Output written on RRESUME.pdf (6 pages).
