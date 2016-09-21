@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.8.25)  21 SEP 2016 20:37
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.8.25)  21 SEP 2016 21:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**\input resume.tex
-(./resume.tex (/usr/local/texlive/2016/texmf-dist/tex/latex/ctex/ctexart.cls
+**\input RRESUME.tex
+(./RRESUME.tex (/usr/local/texlive/2016/texmf-dist/tex/latex/ctex/ctexart.cls
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2016/05/18 v6512 L3 programming layer (loader) 
 
@@ -1477,8 +1477,8 @@ tly
 )
 \Hy@SectionHShift=\skip69
 )
-(./resume.aux)
-\openout1 = `resume.aux'.
+(./RRESUME.aux)
+\openout1 = `RRESUME.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
@@ -1594,9 +1594,9 @@ LaTeX Info: Redefining \ref on input line 26.
 LaTeX Info: Redefining \pageref on input line 26.
 LaTeX Info: Redefining \nameref on input line 26.
 
-(./resume.out) (./resume.out)
+(./RRESUME.out) (./RRESUME.out)
 \@outlinefile=\write3
-\openout3 = `resume.out'.
+\openout3 = `RRESUME.out'.
 
 LaTeX Font Info:    Try loading font information for U+wasy on input line 29.
 
@@ -1612,23 +1612,27 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 29.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./resume.toc)
+)
+
+LaTeX Warning: No \author given.
+
+(./RRESUME.toc)
 \tf@toc=\write4
-\openout4 = `resume.toc'.
+\openout4 = `RRESUME.toc'.
 
+File: portrait.jpg Graphic file (type QTm)
+ <use  "portrait.jpg" > [1
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--45
+]
+Underfull \hbox (badness 10000) in paragraph at lines 43--53
 
  []
 
-[1
-
-]
 LaTeX Font Info:    Font shape `EU1/FandolSong-Regular(0)/m/sl' in size <12> no
 t available
 (Font)              Font shape `EU1/FandolSong-Regular(0)/m/it' tried instead o
-n input line 60.
- [2]
+n input line 68.
+[2]
 Missing character: There is no 年 in font [FandolSong-Regular.otf]/OT:!
 Missing character: There is no 年 in font [FandolSong-Regular.otf]/OT:!
 Missing character: There is no 理 in font [FandolSong-Regular.otf]/OT:!
@@ -1641,68 +1645,51 @@ Missing character: There is no 量 in font [FandolSong-Regular.otf]/OT:!
 Missing character: There is no 量 in font [FandolSong-Regular.otf]/OT:!
 Missing character: There is no 理 in font [FandolSong-Regular.otf]/OT:!
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--90
+Underfull \hbox (badness 10000) in paragraph at lines 85--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--90
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--90
+Underfull \hbox (badness 10000) in paragraph at lines 85--97
 
  []
 
 [3]
 Missing character: There is no ; in font ec-lmr12!
 Missing character: There is no ; in font ec-lmr12!
-Missing character: There is no ; in font ec-lmr12!
-Missing character: There is no ; in font ec-lmr12!
 Missing character: There is no 年 in font [FandolSong-Regular.otf]/OT:!
 Missing character: There is no 年 in font [FandolSong-Regular.otf]/OT:!
 Missing character: There is no 行 in font [FandolSong-Regular.otf]/OT:!
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--107
+Underfull \hbox (badness 10000) in paragraph at lines 103--111
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 119--123
+Underfull \hbox (badness 10000) in paragraph at lines 123--127
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
-
- []
-
-[6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
- [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
- (./resume.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 147.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 147.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
+ [6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
+ (./RRESUME.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 151.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 151.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 92 ({)
+### simple group (level 1) entered at line 99 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 27766 strings out of 493589
- 526805 string characters out of 6143512
- 512122 words of memory out of 5000000
- 30900 multiletter control sequences out of 15000+600000
- 36835 words of font info for 78 fonts, out of 8000000 for 9000
+ 27773 strings out of 493589
+ 526951 string characters out of 6143512
+ 512137 words of memory out of 5000000
+ 30903 multiletter control sequences out of 15000+600000
+ 36843 words of font info for 79 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 63i,6n,77p,10446b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,6n,77p,10447b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on resume.pdf (7 pages).
+Output written on RRESUME.pdf (6 pages).
