@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.8.25)  21 SEP 2016 20:37
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.8.25)  9 OCT 2016 21:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -156,8 +156,8 @@ File: ctexopts.cfg 2016/05/16 v2.4.2 Option configuration file (CTEX)
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count107
 \c@section=\count108
@@ -1624,10 +1624,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--45
 [1
 
 ]
-LaTeX Font Info:    Font shape `EU1/FandolSong-Regular(0)/m/sl' in size <12> no
-t available
+LaTeX Font Info:    Font shape `EU1/FandolSong-Regular(0)/m/sl' in size <10.95>
+ not available
 (Font)              Font shape `EU1/FandolSong-Regular(0)/m/it' tried instead o
-n input line 60.
+n input line 65.
  [2]
 Missing character: There is no 年 in font [FandolSong-Regular.otf]/OT:!
 Missing character: There is no 年 in font [FandolSong-Regular.otf]/OT:!
@@ -1638,7 +1638,6 @@ Missing character: There is no 年 in font [FandolSong-Regular.otf]/OT:!
 Missing character: There is no 年 in font [FandolSong-Regular.otf]/OT:!
 Missing character: There is no 理 in font [FandolSong-Regular.otf]/OT:!
 Missing character: There is no 量 in font [FandolSong-Regular.otf]/OT:!
-Missing character: There is no 量 in font [FandolSong-Regular.otf]/OT:!
 Missing character: There is no 理 in font [FandolSong-Regular.otf]/OT:!
 
 Underfull \hbox (badness 10000) in paragraph at lines 77--90
@@ -1655,54 +1654,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--90
 
  []
 
+Missing character: There is no ; in font ec-lmr10!
+Missing character: There is no ; in font ec-lmr10!
+Missing character: There is no ; in font ec-lmr10!
+Missing character: There is no ; in font ec-lmr10!
 [3]
-Missing character: There is no ; in font ec-lmr12!
-Missing character: There is no ; in font ec-lmr12!
-Missing character: There is no ; in font ec-lmr12!
-Missing character: There is no ; in font ec-lmr12!
 Missing character: There is no 年 in font [FandolSong-Regular.otf]/OT:!
 Missing character: There is no 年 in font [FandolSong-Regular.otf]/OT:!
 Missing character: There is no 行 in font [FandolSong-Regular.otf]/OT:!
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--107
+Underfull \hbox (badness 10000) in paragraph at lines 99--111
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 119--123
+Underfull \hbox (badness 10000) in paragraph at lines 123--127
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
 [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
- [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
  (./resume.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 147.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 147.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 92 ({)
-### bottom level 
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 148.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 148.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
+ ) 
 Here is how much of TeX's memory you used:
- 27766 strings out of 493589
- 526805 string characters out of 6143512
- 512122 words of memory out of 5000000
- 30900 multiletter control sequences out of 15000+600000
- 36835 words of font info for 78 fonts, out of 8000000 for 9000
+ 27759 strings out of 493589
+ 526815 string characters out of 6143512
+ 511953 words of memory out of 5000000
+ 30892 multiletter control sequences out of 15000+600000
+ 35324 words of font info for 71 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 63i,6n,77p,10446b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,6n,77p,10446b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on resume.pdf (7 pages).
+Output written on resume.pdf (6 pages).
